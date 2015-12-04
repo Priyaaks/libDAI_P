@@ -1,0 +1,18 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1138\cocoasubrtf510
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red38\green38\blue38;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sl360
+
+\f0\fs30 \cf2 \cb3 The chapter is still in an early, incomplete state. I will therefore focus my review on its structure and overall reading flow. The current scope of chapter fits well into the structure of the book and provides a good overview of "predictive models" that can be used for forecasting (at least of those I know). However, there are currently some missing parts: The abstract promises a discussion of "hybrid models", which the main section is lacking. Also in Section 2.1, the authors distinguish between a modeling phase and a deployment phase. In the following, only the modeling phase (2.1.1) is described. I missed a similar paragraph for the deployment phase. Section 2.1.1 also mentions random forests and SVMs as examples for machine learning models. They are currently missing in Section 3.\
+\
+When reading the chapter I found it hard to follow at some places. Especially, Section 2 is quite abstract and in some places confusing. A more clear description of the basic assumptions of forecasting at the beginning of Section 2 may be helpful (e.g., an introduction of the general forecasting function, which is currently in Section 2.2). Also a definition what is meant with predictive model in the context of load forecasting would be important (e.g., compared to predicitive performance models described in Chapter 4.1). An overview figure of the forecasting process described in Section 2.1.1 with including the different steps could also help. \
+\
+I would consider to move Section 2.2 on Feature Engineering to an own section as it is a major step in forecasting and the there are several different approaches applicable here.\
+\
+The description of predictive models is currently focused on explaining how they work. A discussion of the assumptions, benefits and limitations of each model would be very helpful (e.g., model xy is good at forecasting short-term trends but cannot learn seasonal patterns).\
+\
+Regarding the related work section: I would prefer to see the references directly associated with the corresponding predictive models in Sections 3 and 4. Instead, a specific section on the challenges of workload forecasting in self-aware computing and how these challenges may be tackled could be included(e.g., with approaches to automatically select and validate predicition models at run-time).\
+\
+Regarding the introduction: I would prefer if examples given for seasonal patterns, trends etc. would be based on the reference scenarios (Chapter 1.5), or at least from computer science. Currently, the reader might ask what these examples have to do with self-aware systems.}

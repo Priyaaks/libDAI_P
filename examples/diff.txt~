@@ -1,0 +1,1164 @@
+							      >	/*  This file is part of libDAI - http://www.libdai.org/
+							      >	 *
+							      >	 *  libDAI is licensed under the terms of the GNU General Pub
+							      >	 *  2, or (at your option) any later version. libDAI is distr
+							      >	 *  warranty. See the file COPYING for more details.
+							      >	 *
+							      >	 *  Copyright (C) 2010  Joris Mooij  [joris dot mooij at libd
+							      >	 */
+							      >
+							      >	#include <dai/alldai.h>
+							      >	#include <iostream>
+							      >	#include <fstream>
+							      >	#include <string>
+							      >	#include "dai/emrun.h"
+							      >	#include <dai/util.h>
+							      >	#include <string>
+							      >	#include <sys/stat.h>
+							      >	#include <time.h>
+							      >	#include <math.h>
+							      >	#include <iomanip>      // std::setprecision
+							      >	#include <sstream>
+							      >	#include <string>
+							      >	#include <cstdlib>
+							      >	#include <boost/lexical_cast.hpp>
+							      >	using namespace std;
+							      >	using namespace dai;
+							      >
+							      >	// GA - initialization
+							      >	size_t max_gen = 25; // no. of generations
+							      >	size_t population_size =20; // population size
+							      >	Real pc;// = 0.8; // crossover probability - between 0.6 an 0
+							      >	Real pm;// = 0.3; // mutation probability - between 1/pop.siz
+							      >	int population_no=0; // current population id
+							      >
+							      >	// 1. Creating initial population of EM runs 
+							      >		
+							      >	char* gibbsfile;// = "/home/priya/libDAI-0.3.1/alarm/500/5.ta
+							      >	//const char* gibbsfile = argv[1];
+							      >	string alarmfgloc;// = "/home/priya/libDAI-0.3.1/alarm_learne
+							      >	string alarmlearnedfgloc;// = "/home/priya/libDAI-0.3.1/alarm
+							      >	const char* networkname = "alarm";
+							      >	size_t maxIters =1000; // maximum number of iterations
+							      >
+							      >	ofstream out;
+							      >	EMRun* runname;
+							      >	vector <EMRun*> layer; 
+							      >	vector <EMRun*> layer_curr;
+							      >	vector <EMRun*> layer_prev;
+							      >	vector <EMRun*> layer_curr_copy;
+							      >	int *arrval;
+							      >	//
+							      >	// Generate a random number between 0 and 1
+							      >	// return a uniform number in [0,1].
+							      >	double unifRand()
+							      >	{
+							      >	    return rand() / double(RAND_MAX);
+							      >	}
+							      >	// Reset the random number generator with the system clock.
+							      >	void seed()
+							      >	{
+							      >		/*Declare variable to hold seconds on clock.*/
+							      >	//	time_t seconds;
+							      >		/*Get value from system clock and place in seconds va
+							      >	//	time(&seconds);
+							      >		/*Convert seconds to a unsigned integer.*/
+							      >	     struct timeval time; 
+							      >	     gettimeofday(&time,NULL);
+							      >
+							      >	     // microsecond has 1 000 000
+							      >	     srand((time.tv_sec * 1000) + (time.tv_usec / 10));
+							      >	}
+							      >
+							      >	std::string& trim(std::string& s, const char* t = " \t\n\r\f\
+							      >	{
+							      >		s.erase(0, s.find_first_not_of(t));
+							      >		s.erase(s.find_last_not_of(t) + 1);
+							      >		return s;
+							      >	}
+							      >
+							      >	void startEM()
+							      >	{
+							      >		size_t i =0,j=0;
+							      >		while(i<population_size)
+							      >		{
+							      >		 string number; 
+							      >		 stringstream num; 
+							      >		 num << i; 
+							      >		 number = num.str();
+							      >		 string dirname; 
+							      >		 stringstream p_id; 
+							      >		 p_id << population_no; 
+							      >		 dirname = p_id.str();
+							      >		 string fgfileloc =  alarmfgloc + dirname+"/"+"alarm_
+							      >		 const char* fgfile = &fgfileloc[0];
+							      >
+							      >		 runname = new EMRun(networkname, i, fgfile, gibbsfil
+							      >
+							      >		 // 2. Run EM
+							      >		 boost::thread threadid(boost::bind(&EMRun::startEM, 
+							      >		 layer.push_back(runname); 
+							      >		 sleep(1);
+							      >		 // 4. Next individual
+							      >		 i=i+1;
+							      >		}
+							      >
+							      >	}
+							      >
+							      >	void checkEMforTermination()
+							      >	{
+							      >	         string dirname; 
+							      >		 stringstream p_id; 
+							      >		 p_id << population_no; 
+							      >		 dirname = p_id.str();
+							      >		string loc =  alarmlearnedfgloc + "learned/"+dirname+
+							      >		const char* learnedloc = &loc[0];
+							      >		mkdir(learnedloc,0755);
+							      >		layer_prev.assign(layer_curr.begin(), layer_curr.end(
+							      >		layer_curr.clear();
+							      >		layer_curr_copy.clear();  
+							      >		while (true){
+							      >		    //cout<<"in while loop "<<layer.size()<<endl;
+							      >		    vector<EMRun*>::iterator it; 
+							      >		    for (it=layer.begin(); it != layer.end(); ++it){ 
+							      >		      //cout<<"layer size "<<layer.size()<<endl;
+							      >		      if((*it)->hasTerminated()) { //if it has termin
+							      >			double ll = (*it)->getLL();
+							      >			double iters = (*it)->getIters();
+							      >			double runid = (*it)->getRun();
+							      >			string number; 
+							      >			stringstream num; 
+							      >			num << runid; 
+							      >			number = num.str();
+							      >		 	string fglearnedfileloc =  alarmlearnedfgloc 
+							      >		    	const char* fglearnedfile = &fglearnedfileloc
+							      >			//cout<<"Run number "<<number<<" ll = "<<ll<<
+							      >			// 3. Store the learned factor graphs
+							      >			InfAlg* inf = (*it)->getInf();
+							      >			ofstream learnedstream;
+							      >			//cout<<"learned file = "<<fglearnedfile<<end
+							      >			learnedstream.open(fglearnedfile);
+							      >			learnedstream.precision(12);
+							      >			learnedstream << inf->fg();  
+							      >			learnedstream.flush();
+							      >			learnedstream.close();
+							      >			delete inf;
+							      >			sleep(1);
+							      >			//cout<<"Run number "<<number<<" has terminat
+							      >			out<<pc<<" "<<pm<<" "<<gibbsfile<<" "<<fglear
+							      >			layer_curr.push_back(*it);
+							      >			layer_curr_copy.push_back(*it);  
+							      >			layer.erase(it);	
+							      >			if (layer.size() == 0){break;}
+							      >			else { it = layer.begin(); }
+							      >		      }
+							      >		      else if(((*it)->getIters()) == maxIters){ //we 
+							      >			double ll = (*it)->getLL();
+							      >			double iters = (*it)->getIters();
+							      >			double runid = (*it)->getRun();
+							      >			string number; 
+							      >			stringstream num; 
+							      >			num << runid; 
+							      >			number = num.str();
+							      >		 	string fglearnedfileloc =  alarmlearnedfgloc 
+							      >		    	const char* fglearnedfile = &fglearnedfileloc
+							      >			//cout<<"Run number "<<number<<" ll = "<<ll<<
+							      >			//cout<<"Run "<<(*it)->getRun()<<" has reache
+							      >			boost::thread thread5(boost::bind(&EMRun::sto
+							      >		 	// 3. Store the learned factor graphs
+							      >			InfAlg *inf = (*it)->getInf();
+							      >		    	ofstream learnedstream;
+							      >		    	//cout<<"learned file = "<<fglearnedfile<<end
+							      >		    	learnedstream.open(fglearnedfile);
+							      >		    	learnedstream.precision(12);
+							      >		    	learnedstream << inf->fg();  
+							      >		    	learnedstream.close();
+							      >			delete inf;
+							      >			sleep(1);		
+							      >			//cout<<"Run number "<<number<<" has reached 
+							      >			out<<pc<<" "<<pm<<" "<<gibbsfile<<" "<<fglear
+							      >			layer_curr.push_back(*it); 
+							      >			layer_curr_copy.push_back(*it);  
+							      >			layer.erase(it);
+							      >		//	if (layer.size() == 0){break;}
+							      >		//	else { it = layer.begin(); }
+							      >		      }
+							      >		      ////cout<<"Going .."<<endl;     
+							      >		 }
+							      >		 if (layer.size() == 0){ //cout<<"breaking while"<<en
+							      >			break; }
+							      >		 else { //cout<<"iterating"<<endl;
+							      >			}
+							      >		  sleep(1); 
+							      >		}
+							      >	}
+							      >	void doMutation() // open each child file and apply mutation 
+							      >	{   
+							      >	    string dirname2;
+							      >	    stringstream p_id2;
+							      >	    p_id2 << population_no+1;
+							      >	    dirname2 = p_id2.str();
+							      >	    string childloc =  alarmlearnedfgloc + dirname2+"/";
+							      >	    const char* childfgloc = &childloc[0];
+							      >	    int t=20;
+							      >	    //cout<<"In Mutation"<<endl;
+							      >	    //cout<<"declarations done "<<arrval[0]<<endl;
+							      >	    for( size_t n = 0; n < t; n++ )
+							      >	    {
+							      >	        string number1;
+							      >	        stringstream num1;
+							      >	        num1 << n;//arrval[n];
+							      >	        number1 = num1.str();
+							      >	        string child =  childloc+ "alarmC_"+number1+".fg";
+							      >	        string child1 =  childloc+ "alarm_"+number1+".fg";
+							      >	        const char* childfgfile = &child[0];         
+							      >	        const char* childfgfile1 = &child1[0];         
+							      >	        //cout<<"child file "<< childfgfile<<endl;     
+							      >	        string line1;
+							      >	        ifstream p1 (childfgfile); 
+							      >	        ofstream c1 (childfgfile1); 
+							      >	        getline(p1,line1);
+							      >	        c1<<line1<<endl;
+							      >	        int factor =0;
+							      >	        int no_factors = 0;
+							      >	        int* factor_names;
+							      >	        int factor_pos=0;
+							      >	        int* states_arr;
+							      >	        int no_states = 1;
+							      >	        int arr_size =1;
+							      >	        int factor_states =0;
+							      >	        int tot_arrays =0;
+							      >	        int arr_set =0;
+							      >	        int arr_set_states =0;
+							      >	        int no_arr_arrset =0;
+							      >	        int stat =0;
+							      >	        int p_c = 0;
+							      >	        double pmut=0;
+							      >	        while(getline(p1,line1))
+							      >	        {
+							      >	            line1 = trim(line1);
+							      >	            //cout<<p_c<<" "<<pmut<<" "<<pm<<" "<<line1<<endl
+							      >	            stringstream ss(line1);           
+							      >	            if(line1.empty())
+							      >	            {
+							      >	              p_c = 0;
+							      >	              stat =0;
+							      >	              //cout<<"factor variable "<<factor<<endl;
+							      >	              seed();
+							      >	              pmut = unifRand(); // generates random a value 
+							      >	              //cout<<"Mutation probability "<<pmut<<endl;   
+							      >	              no_states = 1;
+							      >	              arr_size =1;
+							      >	              factor++;
+							      >	            }
+							      >	            if(pmut>pm)
+							      >	            {
+							      >	             c1<<line1<<endl;
+							      >	             //cout<<"No mutation"<<endl;
+							      >	                //p_c++;       
+							      >	             //continue;
+							      >	            }
+							      >	            if(pmut<=pm) //do mutation handling the constrain
+							      >	            {
+							      >	                //cout<<"Mutation happening "<<endl;
+							      >	                if(p_c == 0)
+							      >	                {
+							      >	                 c1<<line1<<endl;
+							      >	                }
+							      >	                if(p_c == 1)
+							      >	                {
+							      >	                 ss>>no_factors;
+							      >	                 //cout<<"no. of factors "<<no_factors<<endl;
+							      >	                 c1<<no_factors<<endl;
+							      >	                }
+							      >	                if(p_c == 2)
+							      >	                {
+							      >	                 factor_names = new int[no_factors];
+							      >	                 std::vector<std::string> fields;
+							      >	                  fields = tokenizeString( line1, true,"  ");
+							      >	                 for( size_t i = 0; i < fields.size(); ++i )
+							      >	                 {
+							      >	                  stringstream n;
+							      >	                  n << fields[i];
+							      >	                  string s = n.str();      
+							      >	                  if( s.find_first_not_of(" ")!= std::string:
+							      >	                  {
+							      >	                    c1<<s<<" ";   
+							      >	                    n >> factor_names[i];
+							      >	                    if(factor_names[i] == (factor-1))
+							      >	                     factor_pos =i;
+							      >	                  }
+							      >	                  }
+							      >	                 c1<<endl;
+							      >	                 //cout<<"factor position "<<factor_pos<<endl
+							      >	                }
+							      >	                if(p_c == 3)
+							      >	                {
+							      >	                 states_arr = new int[no_factors];
+							      >	                 std::vector<std::string> fields1;
+							      >	                  fields1 = tokenizeString( line1, true,"  ")
+							      >	                 for( size_t j = 0; j < fields1.size(); ++j )
+							      >	                 {
+							      >	                  stringstream n1;
+							      >	                  n1 << fields1[j];
+							      >	                  string state = n1.str();      
+							      >	                  if( state.find_first_not_of(" ")!= std::str
+							      >	                  {
+							      >	                    c1<<state<<" ";   
+							      >	                    n1 >> states_arr[j];
+							      >	                    no_states = no_states * states_arr[j];
+							      >	                    if(j < factor_pos)
+							      >	                     arr_size = arr_size * states_arr[j];
+							      >	                    if(j == factor_pos)
+							      >	                     {
+							      >	                      factor_states = states_arr[j];
+							      >	                      arr_set_states = arr_size*states_arr[j]
+							      >	                     }
+							      >	                  }
+							      >	                  }
+							      >	                 c1<<endl;
+							      >	                 tot_arrays = no_states/arr_size;
+							      >	                 arr_set = no_states/arr_set_states;
+							      >	                 no_arr_arrset = factor_states;
+							      >	                 //cout<<"array size "<<arr_size<<endl;
+							      >	                 //cout<<no_states<<"\t"<<"no. of states "<<n
+							      >	                c1<<no_states<<endl;
+							      >	                }               
+							      >	                if(p_c >= 5)
+							      >	                {
+							      >	                int k=0;                 
+							      >	                 while(k<arr_set)
+							      >	                  {
+							      >	                    std::vector< double * > Arrays;
+							      >	                           for(int l=0; l<no_arr_arrset; l++)
+							      >	                    {
+							      >	                     Arrays.push_back( new double[arr_size]);
+							      >	                    }
+							      >	                    vector<double*>::iterator it2;
+							      >	                    it2=Arrays.begin();
+							      >	                    //get the current cpt values and copy the
+							      >	                    int l=0;
+							      >	                    while(l<no_arr_arrset)
+							      >	                    {
+							      >	                        double* arr = *it2;
+							      >	                        //cout<<"new arr"<<endl;
+							      >	                        int m=0;
+							      >	                        while(m<arr_size)
+							      >	                        {                         
+							      >	                         line1 = trim(line1);
+							      >	                         std::vector<std::string> values;
+							      >	                          values = tokenizeString( line1, tru
+							      >	                         int ii=0; ;
+							      >	                         for( size_t j = 0; j < values.size()
+							      >	                         {
+							      >	                          stringstream n1;
+							      >	                          n1 << values[j];
+							      >	                          string state = n1.str();      
+							      >	                          if( state.find_first_not_of(" ")!= 
+							      >	                          {                          
+							      >	                           if(ii==1)
+							      >	                           {
+							      >	                           n1 >> arr[m];
+							      >	                           //cout<<p_c<<" "<<line1<<" "<<"arr
+							      >	                           m++;                          
+							      >	                           if(m<arr_size)
+							      >	                            getline(p1,line1);
+							      >	                           ii=0;
+							      >	                           }
+							      >	                           else
+							      >	                            ii=1;   
+							      >	                          } //end of if
+							      >	                         } // end of for
+							      >	                        } // end of while -m
+							      >	                        l++;
+							      >	                        if(l<no_arr_arrset)
+							      >	                         getline(p1,line1);
+							      >	                        ++it2;
+							      >	                    } //end of while -l
+							      >	                    vector<double*>::iterator it;
+							      >	                    double sumarr[arr_size];                 
+							      >	                    for(int m=0; m<arr_size; m++)
+							      >	                    {
+							      >	                        it=Arrays.begin();
+							      >	                        double sum =0;                       
+							      >	                        for(int l=0; l<no_arr_arrset; l++) //
+							      >	                        {
+							      >	                          seed();
+							      >	                          double* arr = *it;
+							      >	                          double val = arr[m];
+							      >	                          double rval = rnd_stdnormal();
+							      >	                          while((val+rval)<0) //boundary cond
+							      >	                          {
+							      >	                           rval = rnd_stdnormal();
+							      >	                          }
+							      >	                          //cout<<"val = "<<val<<" rval ="<<r
+							      >	                          val = val+rval;
+							      >	                          //cout<<"mutation = "<<val<<endl;
+							      >	                          /*if(l == no_arr_arrset-1)
+							      >	                            val = 1-sum;
+							      >	                          else
+							      >	                            val = unifRand()/(arr_set+4);*/  
+							      >	                          arr[m] = val;   
+							      >	                          sum = sum +val;   
+							      >	                          ++it;
+							      >	                        }
+							      >	                        sumarr[m] =sum;
+							      >	                        //cout<<"sum = "<<sum<<endl;
+							      >	                    }
+							      >	                    vector<double*>::iterator it3;           
+							      >	                    for(int m=0; m<arr_size; m++)
+							      >	                    {
+							      >	                        it3=Arrays.begin();
+							      >	                        double sum =0;                       
+							      >	                        for(int l=0; l<no_arr_arrset; l++) //
+							      >	                        {
+							      >	                          seed();
+							      >	                          double* arr = *it3;
+							      >	                          double val;
+							      >	                          val = arr[m];
+							      >	                          /*if(l == no_arr_arrset-1)
+							      >	                            val = 1-sum;
+							      >	                          else
+							      >	                            val = unifRand()/(arr_set+4);*/  
+							      >	                          arr[m] = val/sumarr[m];
+							      >	                          //cout<<"mutation val = "<<arr[m]<<
+							      >	                          ++it3;
+							      >	                        }
+							      >	                        //cout<<endl;
+							      >	                    }
+							      >	                    vector<double*>::iterator it1;
+							      >	                    it1=Arrays.begin();       
+							      >	                    for(int l=0; l<no_arr_arrset; l++)
+							      >	                    {
+							      >	                        double* arr = *it1;
+							      >	                        for(int m=0; m<arr_size; m++)
+							      >	                        {
+							      >	                         stringstream v;
+							      >	                         v << fixed << setprecision(15) << ar
+							      >	                         c1<<stat<<"\t"<<v.str()<<endl;
+							      >	                         //cout<<stat<<"\t"<<v.str()<<endl;
+							      >	                         stat++;
+							      >	                        }
+							      >	                        ++it1;
+							      >	                    }
+							      >	                  k++;
+							      >	                  if(k<arr_set)   
+							      >	                    getline(p1,line1);
+							      >	                  }// end of while -k
+							      >	                }// end of if p_c>=5
+							      >	            } // end of if pmut<p_m
+							      >	            p_c++;
+							      >	        } // end of while loop
+							      >	        c1.close();
+							      >	        p1.close();
+							      >	        remove(childfgfile);   
+							      >	    } // end of for loop
+							      >	    //cout<<"Mutation Done"<<endl;
+							      >	}
+							      >
+							      >	/*
+							      >	void doMutation() // open each child file and apply mutation 
+							      >	{	
+							      >		string dirname2; 
+							      >		stringstream p_id2; 
+							      >		p_id2 << population_no+1; 
+							      >		dirname2 = p_id2.str();
+							      >		string childloc =  alarmlearnedfgloc + dirname2+"/";
+							      >		const char* childfgloc = &childloc[0];
+							      >		int t=20;
+							      >		//cout<<"In Mutation"<<endl;
+							      >		//cout<<"declarations done "<<arrval[0]<<endl;
+							      >		for( size_t n = 0; n < t; n++ )
+							      >		{
+							      >			string number1; 
+							      >			stringstream num1; 
+							      >			num1 << n;//arrval[n]; 
+							      >			number1 = num1.str();
+							      >			string child =  childloc+ "alarmC_"+number1+"
+							      >			string child1 =  childloc+ "alarm_"+number1+"
+							      >			const char* childfgfile = &child[0];	
+							      >			const char* childfgfile1 = &child1[0];	
+							      >			//cout<<"child file "<< childfgfile<<endl;
+							      >			string line1;
+							      >			ifstream p1 (childfgfile);  
+							      >			ofstream c1 (childfgfile1);  
+							      >			getline(p1,line1);
+							      >			c1<<line1<<endl;
+							      >			int factor =0;
+							      >			int no_factors = 0;
+							      >			int* factor_names;
+							      >			int factor_pos=0;
+							      >			int* states_arr;
+							      >			int no_states = 1;
+							      >			int arr_size =1;
+							      >			int factor_states =0;
+							      >			int tot_arrays =0;
+							      >			int arr_set =0;
+							      >			int arr_set_states =0;
+							      >			int no_arr_arrset =0;
+							      >			int stat =0;
+							      >			int p_c = 0;
+							      >			double pmut=0;
+							      >			while(getline(p1,line1))
+							      >			{
+							      >				line1 = trim(line1);
+							      >				//cout<<p_c<<" "<<pmut<<" "<<pm<<" "<
+							      >				stringstream ss(line1);		
+							      >				if(line1.empty())
+							      >				{
+							      >				  p_c = 0;
+							      >				  stat =0;
+							      >				  //cout<<"factor variable "<<factor<
+							      >				  seed();
+							      >				  pmut = unifRand(); // generates ran
+							      >				  //cout<<"Mutation probability "<<pm
+							      >				  no_states = 1;
+							      >				  arr_size =1;
+							      >				  factor++;
+							      >				}
+							      >				if(pmut>pm) 
+							      >				{
+							      >				 c1<<line1<<endl;
+							      >				 //cout<<"No mutation"<<endl;
+							      >			         p_c++;		
+							      >				 //continue;
+							      >				}
+							      >				if(pmut<=pm) //do mutation handling t
+							      >				{
+							      >					//cout<<"Mutation happening "
+							      >					if(p_c == 0)
+							      >					{
+							      >					 c1<<line1<<endl;
+							      >					}
+							      >					if(p_c == 1)
+							      >					{
+							      >					 ss>>no_factors;
+							      >					 //cout<<"no. of factors "<<n
+							      >					 c1<<no_factors<<endl;
+							      >					}
+							      >					if(p_c == 2)
+							      >					{
+							      >					 factor_names = new int[no_fa
+							      >					 std::vector<std::string> fie
+							      >				 	 fields = tokenizeString( lin
+							      >					 for( size_t i = 0; i < field
+							      >					 {
+							      >					  stringstream n;
+							      >					  n << fields[i]; 
+							      >					  string s = n.str();	   
+							      >					  if( s.find_first_not_of(" "
+							      >					  {
+							      >						c1<<s<<" ";	
+							      >						n >> factor_names[i];
+							      >						if(factor_names[i] ==
+							      >						 factor_pos =i;
+							      >					  }
+							      >				 	 }
+							      >					 c1<<endl;
+							      >					 //cout<<"factor position "<<
+							      >					}
+							      >					if(p_c == 3)
+							      >					{
+							      >					 states_arr = new int[no_fact
+							      >					 std::vector<std::string> fie
+							      >				 	 fields1 = tokenizeString( li
+							      >					 for( size_t j = 0; j < field
+							      >					 {
+							      >					  stringstream n1;
+							      >					  n1 << fields1[j]; 
+							      >					  string state = n1.str();
+							      >					  if( state.find_first_not_of
+							      >					  {
+							      >						c1<<state<<" ";	
+							      >						n1 >> states_arr[j];
+							      >						no_states = no_states
+							      >						if(j < factor_pos)
+							      >						 arr_size = arr_size 
+							      >						if(j == factor_pos)
+							      >						 {
+							      >						  factor_states = sta
+							      >						  arr_set_states = ar
+							      >						 }
+							      >					  }
+							      >				 	 }
+							      >					 c1<<endl;
+							      >					 tot_arrays = no_states/arr_s
+							      >					 arr_set = no_states/arr_set_
+							      >					 no_arr_arrset = factor_state
+							      >					 //cout<<"array size "<<arr_s
+							      >					 //cout<<no_states<<"\t"<<"no
+							      >					c1<<no_states<<endl;
+							      >					}			
+							      >					if(p_c == 5)
+							      >					{
+							      >					 for(int k=0; k<arr_set; k++)
+							      >					  {
+							      >						std::vector< double *
+							      >					       	for(int l=0; l<no_arr
+							      >						{
+							      >						 Arrays.push_back( ne
+							      >						}
+							      >						vector<double*>::iter
+							      >						for(int m=0; m<arr_si
+							      >						{
+							      >							it=Arrays.beg
+							      >							double sum=0;
+							      >							for(int l=0; 
+							      >							{
+							      >							  seed();
+							      >							  double* arr
+							      >							  double val;
+							      >							  if(l == no_
+							      >								val =
+							      >							  else
+							      >								val =
+							      >							  arr[m] = va
+							      >							  sum = sum +
+							      >							  ++it;
+							      >							}
+							      >						}
+							      >						vector<double*>::iter
+							      >						it1=Arrays.begin();
+							      >						for(int l=0; l<no_arr
+							      >						{
+							      >							double* arr =
+							      >							for(int m=0; 
+							      >							{
+							      >							 stringstream
+							      >							 v << fixed <
+							      >							 c1<<stat<<"\
+							      >							 //cout<<stat
+							      >							 stat++;
+							      >							}
+							      >							++it1;
+							      >						}
+							      >
+							      >					  }
+							      >					}
+							      >				}
+							      >				p_c++;
+							      >			} // end of while loop
+							      >			c1.close();
+							      >			p1.close();
+							      >			remove(childfgfile);	
+							      >		} // end of for loop
+							      >		//cout<<"Mutation Done"<<endl;
+							      >	}
+							      >	*/
+							      >	void doCrossover()
+							      >	{
+							      >		// compute crossover probability
+							      >		 seed();
+							      >		 double pcross = unifRand(); // generates random a va
+							      >		//cout<<"Crossover probability "<<pcross<<endl;
+							      >		// 4. Select 2 parents randomly
+							      >		const int LOW = 0;
+							      >		const int HIGH = 19;
+							      >		int t =20; 
+							      >		//int t=40;
+							      >		// Generate the random variables to select as parents
+							      >		/*Declare variable to hold seconds on clock.*/
+							      >		time_t seconds;
+							      >		/*Get value from system clock and place in seconds va
+							      >		time(&seconds);
+							      >		/*Convert seconds to a unsigned integer.*/
+							      >		srand(time(0));
+							      >		set<int> myset;
+							      >		set<int>::iterator it;
+							      >		size_t k =0,p=0;
+							      >		arrval = new int[t];
+							      >		string dirname; 
+							      >		stringstream p_id; 
+							      >		p_id << population_no; 
+							      >		dirname = p_id.str();
+							      >		string dirname2; 
+							      >		stringstream p_id2; 
+							      >		p_id2 << population_no+1; 
+							      >		dirname2 = p_id2.str();
+							      >		string childloc =  alarmlearnedfgloc + dirname2+"/";
+							      >		const char* childfgloc = &childloc[0];
+							      >		mkdir(childfgloc,0755);
+							      >		for( size_t n = 0; n < t; n++ )
+							      >		{ 
+							      >		   int val = rand() % (HIGH - LOW + 1) + LOW;
+							      >		   it=myset.find(val);
+							      >		   arrval[n] = val;
+							      >		   if(it==myset.end()) // if the value is not in the 
+							      >		   {
+							      >			myset.insert(val);
+							      >			p++;
+							      >			if(p == 2)
+							      >			{
+							      >			 //cout <<"Random value is"<<arrval[n]<<" and
+							      >			 string number1; 
+							      >			 stringstream num1; 
+							      >			 num1 << arrval[n]; 
+							      >			 number1 = num1.str();
+							      >			 string parent1 =  alarmlearnedfgloc +"learne
+							      >			 string child1 =  childloc+ "alarmC_"+number1
+							      >			 const char* parentfgfile1 = &parent1[0];
+							      >			 const char* childfgfile1 = &child1[0];
+							      >			 string number2; 
+							      >			 stringstream num2; 
+							      >			 num2 << arrval[n-1]; 
+							      >			 number2 = num2.str();
+							      >			 string parent2 = alarmlearnedfgloc +"learned
+							      >			 string child2 =  childloc+ "alarmC_"+number2
+							      >			 const char* parentfgfile2 = &parent2[0];
+							      >			 const char* childfgfile2 = &child2[0];	 
+							      >			 //cout<<"parent files are "<< parentfgfile1<
+							      >			 //cout<<"child files are "<< childfgfile1<<"
+							      >		 
+							      >			 string line1,line2;
+							      >			 ifstream p1 (parentfgfile1);  ifstream p2 (p
+							      >			 ofstream c1 (childfgfile1);  ofstream c2 (ch
+							      >			// 5. Do crossover and create two children
+							      >			// randomly select a crossover point
+							      >			 int cr_pt = (rand() % 36) +1;
+							      >			 int c = 0; // count of parameters
+							      >		 	 int p_c1 = 0, p_c2 =0; // counter to skip th
+							      >			 //cout<<"Crossover point is "<< cr_pt<<endl;
+							      >			 double pmut1=0, pmut2 =0;
+							      >			 if (p1.is_open() && p2.is_open())
+							      >			 {
+							      >				 getline(p1,line1); getline(p2,line2)
+							      >				 c1<< line1<<endl;
+							      >				 c2<< line2<<endl;		
+							      >
+							      >				 while(getline(p1,line1) && getline(p
+							      >				 {
+							      >					//////cout<<line1 << " "<< li
+							      >					line1 = trim(line1); line2 = 
+							      >					if(line1.empty())
+							      >					{
+							      >						c++; 	
+							      >						seed();
+							      >					 	c1<< line1<<endl;
+							      >						c2<< line2<<endl;
+							      >						//cout<<"empty line"<
+							      >					}
+							      >					else
+							      >					{
+							      >					 	//cout<<"Line number:
+							      >						//cout<<"Crossover po
+							      >						if(c <= cr_pt || pcro
+							      >						{		
+							      >					 		c1<< line1<<e
+							      >							c2<< line2<<e
+							      >						}
+							      >						else
+							      >						{
+							      >							//cout<<"cros
+							      >							c2<< line1<<e
+							      >							c1<< line2<<e
+							      >						}
+							      >					}
+							      >				 }
+							      >			 }
+							      >			 p1.close(); p2.close();
+							      >		 	 c1.close(); c2.close(); 
+							      >			 p=0;	
+							      >			//break;
+							      >			}
+							      >
+							      >		   }
+							      >		   else
+							      >		   {
+							      >			n=n-1;
+							      >			continue;
+							      >		   }   
+							      >		}
+							      >	}
+							      >
+							      >	double calculateDistance(std::istream &parent,std::istream &c
+							      >	{
+							      >	 double distance=0;
+							      >	 double sum =0;
+							      >	 int c=0,p_c=0;
+							      >	 string line1,line2;
+							      >	 double val1,val2; 
+							      >	 getline(parent,line1); getline(child,line2);
+							      >	 //cout<<"In calculate distance" <<endl;
+							      >	  while(getline(parent,line1) && getline(child,line2))
+							      >	 {
+							      >		////cout<<line1 << " "<< line2 <<endl;
+							      >		line1 = trim(line1); line2 = trim(line2);
+							      >		if(line1.empty())
+							      >		{
+							      >		 //cout<<"distance = "<<distance<<endl<<endl;	
+							      >		 sum =sum+distance;
+							      >		 p_c=0;
+							      >		 c++; 	
+							      >		 distance =0;					
+							      >		}
+							      >		if(p_c >= 5)
+							      >		{	 
+							      >		 std::vector<std::string> fields, fields1;
+							      >		 fields = tokenizeString( line1, true,"  ");
+							      >		 fields1 = tokenizeString( line2, true,"  ");
+							      >		 string state_line, param_line;
+							      >		 for( size_t i = 0; i < fields.size(); ++i ) {
+							      >		   stringstream n;
+							      >		   n << fields[i]; 
+							      >		   string s = n.str();	   
+							      >		   if( s.find_first_not_of(" ")!= std::string::npos &
+							      >			{
+							      >				//cout<<s<<"\t";	
+							      >				n >> val1;
+							      >			}
+							      >		 }
+							      >		 
+							      >		for( size_t j = 0; j < fields1.size(); ++j ) {
+							      >		   stringstream n1;
+							      >		   n1 << fields1[j];
+							      >	           string s1 = n1.str();			   
+							      >		   if( s1.find_first_not_of(" ")!= std::string::npos 
+							      >			{
+							      >				//cout<<s1<<"\t";	
+							      >				n1 >> val2;
+							      >			}
+							      >		 }
+							      >		 //distance = distance+ pow((val1-val2),2); //Euclide
+							      >		 distance = distance + val1* log2( val1/val2); // KL 
+							      >		 //cout<<endl;
+							      >		}
+							      >		p_c++;
+							      >	 }
+							      >		//cout<<"The distance is "<<sum<<endl;
+							      >		return sum;
+							      >	}
+							      >	/*
+							      >	void findWinnerAndReplace(int val1, int val2)
+							      >	{
+							      >	 string ssrunid, ssrunid1;
+							      >	 double ll, ll1; 
+							      >	 //cout<<"declarations done "<<arrval[0]<<endl;
+							      >	vector<EMRun*>::iterator it, it1; 
+							      >
+							      >	for (it=layer_prev.begin(); it != layer_prev.end(); ++it) //i
+							      >	{    
+							      >	     // cout<<"layer size "<<layer.size()<<endl;	
+							      >	      ll = (*it)->getLL();
+							      >	      double iters = (*it)->getIters();
+							      >	      double runid = (*it)->getRun();
+							      >	      stringstream sll;
+							      >	      stringstream siters;	 
+							      >	      stringstream srunid;
+							      >	      string ssll; sll<<ll; ssll = sll.str();
+							      >	      string ssiters; siters <<iters; ssiters = siters.str();
+							      >	      srunid <<runid; ssrunid = srunid.str();
+							      >	     // cout<<"runid = "<<ssrunid<<"  "<<ssll<<" "<<ssiters<<
+							      >	      if(val1==runid)
+							      >	      {
+							      >		//cout<<val<<" "<<"runid = "<<ssrunid<<"  "<<ssll<<" 
+							      >		break;
+							      >	      }	
+							      >	}
+							      >	for (it1=layer_curr.begin(); it1 != layer_curr.end(); ++it1) 
+							      >	{    
+							      >	     // cout<<"layer size "<<layer.size()<<endl;	
+							      >	      ll1 = (*it1)->getLL();
+							      >	      double iters1 = (*it1)->getIters();
+							      >	      double runid1 = (*it1)->getRun();
+							      >	      stringstream sll1;
+							      >	      stringstream siters1;	 
+							      >	      stringstream srunid1;
+							      >	      string ssll1; sll1<<ll1; ssll1 = sll1.str();
+							      >	      string ssiters1; siters1 <<iters1; ssiters1 = siters1.s
+							      >	      srunid1 <<runid1; ssrunid1 = srunid1.str();
+							      >	     // cout<<"runid = "<<ssrunid1<<"  "<<ssll1<<" "<<ssiters
+							      >	      if(val2==runid1)
+							      >	      {
+							      >		//cout<<val<<" "<<"runid = "<<ssrunid1<<"  "<<ssll1<<
+							      >		break;
+							      >	      }	
+							      >	}
+							      >	if(ll<=ll1) //if(parent_fitness <= child_fitness)
+							      >	{
+							      >		//cout<<"Child  has a better LL so leave the child as
+							      >	}	
+							      >	else
+							      >	{
+							      >		string dirname; 
+							      >		stringstream p_id; 
+							      >		p_id << population_no; 
+							      >		dirname = p_id.str();
+							      >		string dirname1; 
+							      >		stringstream p_id1; 
+							      >		p_id1 << population_no-1; 
+							      >		dirname1 = p_id1.str();
+							      >		
+							      >		string parentloc =  alarmlearnedfgloc + "learned/"+di
+							      >		string childloc =  alarmlearnedfgloc + "learned/"+dir
+							      >		//cout<<"Copying files from "<<parentloc<<" to "<<chi
+							      >		char *ploc = &parentloc[0];
+							      >		char *cloc = &childloc[0];
+							      >		//cout<<"Replace the child with the parent."<<childlo
+							      >		remove(cloc);// remove the child file from the child 
+							      >		ifstream parent(ploc);
+							      >		ofstream child(cloc);
+							      >		child << parent.rdbuf();// copy the parent file to th
+							      >		child.close(); parent.close();
+							      >	}
+							      >	 
+							      >	 
+							      >	}
+							      >	*/
+							      >	void findWinnerAndReplace(int val1, int val2)
+							      >	{
+							      >	 string ssrunid, ssrunid1;
+							      >	 double ll, ll1;
+							      >	 //cout<<"declarations done "<<arrval[0]<<endl;
+							      >	vector<EMRun*>::iterator it, it1;
+							      >
+							      >	for (it=layer_prev.begin(); it != layer_prev.end(); ++it) //i
+							      >	{   
+							      >	     // cout<<"layer size "<<layer.size()<<endl;          
+							      >	      ll = (*it)->getLL();
+							      >	      double iters = (*it)->getIters();
+							      >	      double runid = (*it)->getRun();
+							      >	      stringstream sll;
+							      >	      stringstream siters;     
+							      >	      stringstream srunid;
+							      >	      string ssll; sll<<ll; ssll = sll.str();
+							      >	      string ssiters; siters <<iters; ssiters = siters.str();
+							      >	      srunid <<runid; ssrunid = srunid.str();
+							      >	     // cout<<"runid = "<<ssrunid<<"  "<<ssll<<" "<<ssiters<<
+							      >	      if(val1==runid)
+							      >	      {
+							      >	    //cout<<val<<" "<<"runid = "<<ssrunid<<"  "<<ssll<<" "<<s
+							      >	    break;
+							      >	      }   
+							      >	}
+							      >	for (it1=layer_curr.begin(); it1 != layer_curr.end(); ++it1) 
+							      >	{   
+							      >	     // cout<<"layer size "<<layer.size()<<endl;          
+							      >	      ll1 = (*it1)->getLL();
+							      >	      double iters1 = (*it1)->getIters();
+							      >	      double runid1 = (*it1)->getRun();
+							      >	      stringstream sll1;
+							      >	      stringstream siters1;     
+							      >	      stringstream srunid1;
+							      >	      string ssll1; sll1<<ll1; ssll1 = sll1.str();
+							      >	      string ssiters1; siters1 <<iters1; ssiters1 = siters1.s
+							      >	      srunid1 <<runid1; ssrunid1 = srunid1.str();
+							      >	     // cout<<"runid = "<<ssrunid1<<"  "<<ssll1<<" "<<ssiters
+							      >	      if(val2==runid1)
+							      >	      {
+							      >	    //cout<<val<<" "<<"runid = "<<ssrunid1<<"  "<<ssll1<<" "<
+							      >	    break;
+							      >	      }   
+							      >	}
+							      >	double p_p = ll/(ll+ll1);
+							      >	double p_c = ll1/(ll+ll1);
+							      >	//cout<<"p_p"<<p_p<<" "<<"p_c"<<p_c<<endl;
+							      >	if(p_p <= p_c)//if(ll<=ll1) //if(parent_fitness <= child_fitn
+							      >	{
+							      >	    //cout<<"Child  has a better LL so leave the child as it 
+							      >	}   
+							      >	else
+							      >	{
+							      >	    string dirname;
+							      >	    stringstream p_id;
+							      >	    p_id << population_no;
+							      >	    dirname = p_id.str();
+							      >	    string dirname1;
+							      >	    stringstream p_id1;
+							      >	    p_id1 << population_no-1;
+							      >	    dirname1 = p_id1.str();
+							      >	   
+							      >	    string parentloc =  alarmlearnedfgloc + "learned/"+dirnam
+							      >	    string childloc =  alarmlearnedfgloc + "learned/"+dirname
+							      >	    //cout<<"p_p"<<p_p<<" "<<"p_c"<<p_c<<" "<<"Copying files 
+							      >	    char *ploc = &parentloc[0];
+							      >	    char *cloc = &childloc[0];
+							      >	    //cout<<"Replace the child with the parent."<<childloc<<e
+							      >	    remove(cloc);// remove the child file from the child fold
+							      >	    ifstream parent(ploc);
+							      >	    ofstream child(cloc);
+							      >	    child << parent.rdbuf();// copy the parent file to the ch
+							      >	    child.close(); parent.close();
+							      >	}
+							      >	 
+							      >	 
+							      >	}
+							      >
+							      >	void replacementStrategy()
+							      >	{
+							      >	 int t=20;
+							      >	 //cout<<"In replacement strategy"<<endl;
+							      >	 string ssrunid, ssrunid1;
+							      >	 double ll_p1, ll_p2, ll_c1, ll_c2, val1, val2, val3, val4; 
+							      >	  //cout<<"declarations done "<<arrval[0]<<endl;
+							      >	 for( size_t n = 0; n < t; )
+							      >	 {
+							      >		string dirname, dirname2, childloc,number1, number2, 
+							      >		//cout<<"Checking value "<< arrval[n]<<" and "<<arrva
+							      >		int val = arrval[n];	
+							      >		stringstream p_id; 	
+							      >		stringstream p_id2;
+							      >		p_id << population_no-1; 
+							      >		dirname = p_id.str();	 
+							      >		p_id2 << population_no; 
+							      >		dirname2 = p_id2.str();
+							      >		childloc =  alarmlearnedfgloc +"learned/"+dirname2+"/
+							      >		const char* childfgloc = &childloc[0];
+							      >		stringstream num1; 
+							      >		num1 << arrval[n]; 
+							      >		number1 = num1.str();
+							      >		parent1 =  alarmlearnedfgloc +"learned/"+dirname+"/"+
+							      >		child1 =  childloc+ "alarm_"+number1+".fg";
+							      >		const char* parentfgfile1 = &parent1[0];
+							      >		const char* childfgfile1 = &child1[0];
+							      >		stringstream num2;
+							      >		num2 << arrval[n+1];  
+							      >		number2 = num2.str();
+							      >		parent2 = alarmlearnedfgloc +"learned/"+dirname+"/"+ 
+							      >		child2 =  childloc+ "alarm_"+number2+".fg";
+							      >		const char* parentfgfile2 = &parent2[0];
+							      >		const char* childfgfile2 = &child2[0];	 
+							      >		//cout<<"parent files are "<< parentfgfile1<< " and "
+							      >		//cout<<"child files are "<< childfgfile1<<" and "<<c
+							      >		ifstream p1 (parentfgfile1);  ifstream p2 (parentfgfi
+							      >		ifstream c1 (childfgfile1);  ifstream c2 (childfgfile
+							      >		//cout<<"checking "<<parentfgfile1<<" and "<< childfg
+							      >		val1 = calculateDistance(p1,c1);
+							      >		//cout<<"checking "<<parentfgfile2<<" and "<< childfg
+							      >		val2 = calculateDistance(p2,c2);
+							      >		ifstream p3 (parentfgfile1);  ifstream p4 (parentfgfi
+							      >		ifstream c3 (childfgfile1);  ifstream c4 (childfgfile
+							      >		//cout<<"checking "<<parentfgfile1<<" and "<< childfg
+							      >		val3 = calculateDistance(p3,c4);
+							      >		//cout<<"checking "<<parentfgfile2<<" and "<< childfg
+							      >		val4 = calculateDistance(p4,c3);
+							      >		if((val1+val2)<(val3+val4))
+							      >		{	
+							      >			//cout<<" Find winner within family"<<endl;
+							      >			findWinnerAndReplace(arrval[n],arrval[n]);
+							      >			findWinnerAndReplace(arrval[n+1],arrval[n+1])
+							      >		}
+							      >		else
+							      >		{
+							      >			//cout<<" Find winner between family"<<endl;
+							      >			findWinnerAndReplace(arrval[n],arrval[n+1]);
+							      >			findWinnerAndReplace(arrval[n+1],arrval[n]);
+							      >		}
+							      >		
+							      >		n =n+2;
+							      >	 } 
+							      >	 
+							      >	}
+							      >	/*
+							      >	struct sort_pred {
+							      >	    bool operator()(const std::pair<EMRun*,double> &left, con
+							      >	        return left.second < right.second;
+							      >	    }
+							      >	};
+							      >
+							      >	void replacementStrategy()
+							      >	{
+							      >	 int t=10;
+							      >	 cout<<"In replacement strategy"<<endl;
+							      >	 string ssrunid, ssrunid1;
+							      >	 double ll_p1, ll_p2, ll_c1, ll_c2, val1, val2, val3, val4; 
+							      >	  //cout<<"declarations done "<<arrval[0]<<endl;
+							      >	 for( size_t n = 0; n < t; n++) // take one parent run
+							      >	 {
+							      >		string dirname, dirname2, childloc,number1, number2, 
+							      >		cout<<"Checking value "<< arrval[n]<<endl;
+							      >		int val = arrval[n];	
+							      >		stringstream p_id; 	
+							      >		stringstream p_id2;
+							      >		p_id << population_no-1; 
+							      >		dirname = p_id.str();	 
+							      >		p_id2 << population_no; 
+							      >		dirname2 = p_id2.str();
+							      >		childloc =  alarmlearnedfgloc +"learned/"+dirname2+"/
+							      >		const char* childfgloc = &childloc[0];
+							      >		stringstream num1; 
+							      >		num1 << arrval[n]; 
+							      >		number1 = num1.str();
+							      >		parent1 =  alarmlearnedfgloc +"learned/"+dirname+"/"+
+							      >		const char* parentfgfile1 = &parent1[0];	
+							      >		vector<EMRun*>::iterator it; 
+							      >		std::vector<std::pair<EMRun*, double> > vec; 
+							      >		for (it=layer_curr_copy.begin(); it != layer_curr_cop
+							      >		{    
+							      >		        double runid = (*it)->getRun();
+							      >		        stringstream srunid;
+							      >		        srunid <<runid; 
+							      >		    	string ssrunid = srunid.str();
+							      >			child1 =  childloc+ "alarm_"+ssrunid+".fg";
+							      >			const char* childfgfile1 = &child1[0];
+							      >			ifstream p1 (parentfgfile1);  
+							      >			ifstream c1 (childfgfile1);  
+							      >			cout<<"checking "<<parentfgfile1<<" and "<< c
+							      >			val1 = calculateDistance(p1,c1);
+							      >			cout<<ssrunid<<"\t"<<val1<<endl;
+							      >			vec.push_back(make_pair(*it, val1));
+							      >		}
+							      >		std::sort(vec.begin(), vec.end(), sort_pred());
+							      >		cout<<"sorted vector"<<endl;
+							      >		typedef std::vector<std::pair<EMRun*, double> > vecto
+							      >		int j =0;
+							      >		for (vector_type::const_iterator pos = vec.begin(); p
+							      >		{
+							      >		 EMRun* child_no = pos->first;
+							      >		 double distance = pos->second;
+							      >		 cout<<child_no->getRun()<<"\t"<<distance<<endl;
+							      >		}
+							      >		vector<EMRun*>::iterator it1; 
+							      >		vector_type::const_iterator pos1 = vec.begin();
+							      >		for (it1=layer_curr_copy.begin(); it1 != layer_curr_c
+							      >		{    
+							      >		        double runid = (*it1)->getRun();
+							      >			EMRun* child_no = pos1->first;
+							      >			double runid1 = child_no->getRun();
+							      >			if(runid==runid1)
+							      >			 {
+							      >			 cout<<"Run "<<runid<<" is erased"<<endl;
+							      >	    		 layer_curr_copy.erase(it1);
+							      >			 cout<<"Done erasing"<<endl;
+							      >			 break;
+							      >			 }
+							      >		}
+							      >	 }
+							      >	}
+							      >	*/
+							      >	int main(int argc, char *argv[]) {
+							      >	const char* fname =argv[2];
+							      >	gibbsfile = argv[1]; 
+							      >	istringstream ss( argv[3] );
+							      >	ss >> pm;
+							      >	stringstream ss1( argv[4] );
+							      >	ss1 >> pc;
+							      >	stringstream ss2(argv[5]);
+							      >	alarmfgloc = ss2.str();
+							      >	alarmlearnedfgloc = ss2.str();
+							      >
+							      >	out.open(fname);
+							      >	time_t timer1, timer2;
+							      >	time(&timer1);
+							      >	// clock_t tStart = clock();
+							      >	while(population_no<max_gen)
+							      >	{
+							      >		startEM();
+							      >		checkEMforTermination(); 
+							      >		//cout<<"population no"<<population_no<<endl;
+							      >		if(population_no > 0)
+							      >		{
+							      >		  replacementStrategy();
+							      >		}
+							      >		doCrossover();
+							      >		doMutation();
+							      >		population_no=population_no+1;
+							      >	}
+							      >	time(&timer2);
+							      >	double t = difftime(timer2,timer1);//(clock() - tStart)/CLOCK
+							      >	//double t = (clock() - tStart)/CLOCKS_PER_SEC;
+							      >	//cout<<"Time taken: "<<t<<"s"<<endl;
+							      >	out<<"Time taken: "<<t<<"s"<<endl;
+							      >	out.close();
+							      >	return 0;
+							      >	}
+							      >

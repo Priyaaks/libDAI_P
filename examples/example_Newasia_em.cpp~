@@ -1,0 +1,65 @@
+/*  This file is part of libDAI - http://www.libdai.org/
+ *
+ *  libDAI is licensed under the terms of the GNU General Public License version
+ *  2, or (at your option) any later version. libDAI is distributed without any
+ *  warranty. See the file COPYING for more details.
+ *
+ *  Copyright (C) 2010  Joris Mooij  [joris dot mooij at libdai dot org]
+ */
+
+#include <dai/alldai.h>
+#include <iostream>
+#include <fstream>
+#include <string>
+
+using namespace std;
+using namespace dai;
+//./example_Newasia.em ./500/coopy.tab out.log alarm.em alarm_1.fg out1.log
+int main(int argc, char *argv[]) {
+
+    // Read the factorgraph from the file
+    FactorGraph NewasiaNetwork;
+    NewasiaNetwork.ReadFromFile( argv[4] );
+
+    // Prepare junction-tree object for doing exact inference for E-step
+    PropertySet infprops;
+    infprops.set( "verbose", (size_t)1 );
+    infprops.set( "updates", string("HUGIN") );
+    InfAlg* inf = newInfAlg( "JTREE", NewasiaNetwork, infprops );
+    inf->init();
+
+    ofstream outfile;
+    outfile.open(argv[2],ios::out | ios::app);
+    ofstream outfile1;
+    outfile1.open(argv[5],ios::out | ios::app);
+    Evidence e;
+    ifstream estream(argv[1]);
+    e.addEvidenceTabFile( estream, NewasiaNetwork );
+    ifstream emstream( argv[3] );
+    EMAlg em(e, *inf, emstream);
+    Real l;
+	//cout<<"Starting EM"<<endl;
+// Iterate EM until convergence
+   while( !em.hasSatisfiedTermConditions() ) {
+       l = em.iterate();
+    }
+   // l = em.run1();
+    outfile << argv[1] << " " << argv[4]<<" "<<em.Iterations()<<" " << l << endl;
+   /* outfile << endl << "True factor graph:" << endl << "##################" << endl;
+    outfile.precision(12);
+    outfile << NewasiaNetwork;
+   // Output learnedfactorgraph  */                                                                                                                                                                       
+    outfile1 << endl << "Learned factor graph:" << endl << "#####################" << endl;
+     outfile1.precision(12);
+     outfile1 << inf->fg();
+time(&timer2);
+double t = difftime(timer2,timer1);
+(clock() - tStart)/CLOCKS_PER_SEC;
+double t_c = (clock() - tStart)/CLOCKS_PER_SEC;
+outfile<<"Time taken: "<<t<<"s"<<endl;
+outfile<<" Processor Time taken: "<<t_c<<"s"<<endl;
+     delete inf;
+    outfile.close();	
+    outfile1.close();
+    return 0;
+}

@@ -1,0 +1,42 @@
+#
+#arg[1]=datafolder (same as factor graph file)
+#
+#declare samples=(100 250 500 1000 2000 4000)
+
+declare samples=(500)
+#declare tabfile=(7 13 19 28 33)
+declare tabfile=(3NodeBN1_2)
+declare pm=(0.02702 0.3 0.5)
+tLen=${#pm[@]}
+tLen1=${#tabfile[@]}
+tLen2=${#samples[@]}
+declare pc=(0.1 0.2 0.5 0.8)
+#pc = 0.1
+for (( q = 0; q < 1; q++ )) ### GA runs###
+do
+	for (( p = 0; p < 1; p++ )) ### samples ###
+	do
+	 #mkdir /home/priya/libDAI-0.3.1/${samples[$p]}
+		for (( j = 0 ; j < 1; j++ )) ### denotes the data file ###
+		do
+		 #mkdir -p /home/priya/libDAI-0.3.1/${samples[$p]}/${tabfile[$j]}/$q
+			for (( k = 1 ; k <2; k++ )) ### denotes the mutation probability ###
+			do
+			   mkdir -p /home/priya/libDAI-0.3.1/${samples[$p]}/${tabfile[$j]}/$q/${pm[$k]}/0
+			   mkdir /home/priya/libDAI-0.3.1/${samples[$p]}/${tabfile[$j]}/$q/${pm[$k]}/learned
+			   #cp /home/priya/libDAI-0.3.1/$1_factor_graphs/$1_*.fg /home/priya/libDAI-0.3.1/${samples[$p]}/${tabfile[$j]}/$q/${pm[$k]}/0
+			   cp /home/priya/libDAI-0.3.1/$1_factor_graphs/$1_{0..19}.fg /home/priya/libDAI-0.3.1/${samples[$p]}/${tabfile[$j]}/$q/${pm[$k]}/0
+			   #echo "data file" /home/priya/libDAI-0.3.1/$1/${samples[$p]}/${tabfile[$j]}.tab
+			   #echo "out log" /home/priya/libDAI-0.3.1/${samples[$p]}/${tabfile[$j]}/$q/${pm[$k]}/${pm[$k]}.log
+			   #echo "pm" ${pm[$k]}
+			   #echo "pc" ${pc[0]}
+			   #echo "alarmlearnedfgloc" /home/priya/libDAI-0.3.1/${samples[$p]}/${tabfile[$j]}/$q/${pm[$k]}/
+			  #/home/priya/libDAI-0.3.1/examples/example_Newasia_mtem /home/priya/libDAI-0.3.1/$1/${samples[$p]}/${tabfile[$j]}.tab /home/priya/libDAI-0.3.1/${samples[$p]}/${tabfile[$j]}/$q/${pm[$k]}/${pm[$k]}.log $q ${pc[0]} /home/priya/libDAI-0.3.1/${samples[$p]}/${tabfile[$j]}/$q/${pm[$k]}/0/
+#>> /home/priya/libDAI-0.3.1/${samples[$p]}/${tabfile[$j]}/$q/${pm[$k]}/out.log
+
+			 /home/priya/libDAI-0.3.1/examples/example_gaem_deterministic /home/priya/libDAI-0.3.1/$1/${samples[$p]}/${tabfile[$j]}.tab /home/priya/libDAI-0.3.1/${samples[$p]}/${tabfile[$j]}/$q/${pm[$k]}/${pm[$k]}.log ${pm[k]} ${pc[0]} /home/priya/libDAI-0.3.1/${samples[$p]}/${tabfile[$j]}/$q/${pm[$k]}/ $q.log $1
+>> /home/priya/libDAI-0.3.1/${samples[$p]}/${tabfile[$j]}/$q/${pm[$k]}/out.log 
+			done
+		done
+	done
+done

@@ -1,0 +1,176 @@
+/* 
+ *Filename: emrun.cpp
+ *Description: class that handles emrun object, including startem, pauseem functions for layer class to interface with
+ *Date: April 6, 2011
+ */
+
+#include <dai/alldai.h>
+#include <dai/emalg.h>
+#include <sstream>
+#include <fstream>
+#include <string>
+#include <iostream>
+#include <boost/thread/thread.hpp>
+#include "dai/emrun.h"
+#include <string>
+#include <dai/util.h>
+
+using namespace std; 
+using namespace dai; 
+
+const string alarmfgloc = "/home/priya/libDAI-0.3.1/alarm_factor_graphs/"; 
+const string carstartsfgloc = "/home/priya/libDAI-0.3.1/carstarts_factor_graphs/"; 
+
+//const char* learnedfile; 
+
+EMRun::EMRun (const string network,  const int fg_num, const char* fgfile, const char* gibbsfilename) : runNum(fg_num), numIters(0), ll(0.0), terminated(0), running(1), emobj(NULL), inf(NULL), e(), emstream(NULL){
+  string number; 
+  stringstream num; 
+  //num << fg_num; 
+  //number = num.str(); 
+  string fgfileloc; 
+  string emfileloc; 
+  string fglearnedfileloc;
+  if (!network.compare("alarm")){ //compare returns 0 if equal
+    //fgfileloc = alarmfgloc + "alarm_" + number + ".fg"; 
+    emfileloc = "/home/priya/libDAI-0.3.1/"+ network+".em"; 
+   
+  }
+  else {
+    cerr << "Error: network not recognized" << endl; 
+  }
+  //reads the factor graph from the file
+  FactorGraph fg; 
+ // const char* fgfile; 
+  //fgfile = &fgfileloc[0]; 
+  fg.ReadFromFile(fgfile); 
+
+  //setting up junction tree object for inference algo
+  PropertySet infprops; 
+  infprops.set( "verbose", (size_t)1 ); 
+  infprops.set( "updates", string("HUGIN") ); 
+  inf = newInfAlg ("JTREE", fg, infprops); 
+  inf->init(); 
+  
+  //loading the gibbs file data in
+  ifstream estream( gibbsfilename ); 
+  e.addEvidenceTabFile( estream, fg); 
+  const char* emfile; 
+  emfile = &emfileloc[0]; 
+  emstream = new ifstream ( emfile ); 
+  emobj = new EMAlg(e, *inf, *emstream); 
+ //learnedfile = learnedfile1;
+  //learnedfile = &fglearnedfileloc[0];
+ // ofstream learnedstream("/home/priya/libDAI-0.3.1/alarm_learned_factor_graphs/alarm_5.fg");
+}
+
+
+/*void EMRun::startEM(const int maxiters) {
+  if (!(emobj->hasSatisfiedTermConditions())){
+    {
+      boost::mutex::scoped_lock lock(mutex_);
+      while (!running){
+	condition_.wait(lock); 
+      }
+    }
+    while (!(emobj->hasSatisfiedTermConditions()) && numIters <= maxiters){
+      {
+	boost::mutex::scoped_lock lock(mutex_);
+	if (!running){
+	  break;
+	}
+      }
+      ll = emobj->iterate(); 
+      numIters++; 
+    }
+    if (running){
+      boost::mutex::scoped_lock lock(mutex_); 
+      running = 0; 
+      
+    }
+    if (emobj->hasSatisfiedTermConditions()){
+      terminated = 1; 
+    }
+  }
+  }*/
+
+void EMRun::startEM(const int maxIters) {  
+  if (terminated == 0 && numIters < maxIters){
+   while (!(emobj->hasSatisfiedTermConditions()) && numIters < maxIters){
+      stop_while_paused(); 
+      {
+	boost::unique_lock<boost::mutex> lock(m_numiter_mutex); 
+	//cout <<"iter number "<<numIters<<endl; 
+	ll = emobj->iterate(); 
+    	numIters++;
+      }
+    }
+  if (emobj->hasSatisfiedTermConditions()){
+      boost::unique_lock<boost::mutex> lock(m_terminate_mutex); 
+      terminated = 1;     
+    }
+	
+    // for Global GAEM
+    /*ll = emobj->run1();
+    numIters++;
+    boost::unique_lock<boost::mutex> lock(m_terminate_mutex); 
+    terminated = 1;   */
+  }
+}
+
+void EMRun::stop_while_paused() {
+  boost::unique_lock<boost::mutex> lock(m_stop_mutex); 
+  while (!running){
+    m_stop_changed.wait(lock); 
+  }
+}
+
+
+bool EMRun::hasTerminated() {
+  boost::unique_lock<boost::mutex> lock(m_terminate_mutex); 
+  return terminated; 
+}
+
+int EMRun::getIters() {
+  boost::unique_lock<boost::mutex> lock(m_numiter_mutex); 
+  return numIters;
+}
+
+int EMRun::getRun() {
+  return runNum;
+}
+
+void EMRun::stopEM() {
+  {
+    boost::unique_lock<boost::mutex> lock(m_stop_mutex); 
+    running = 0;
+  }
+  m_stop_changed.notify_all(); 
+}
+
+void EMRun::resumeEM(){
+  {
+    boost::unique_lock<boost::mutex> lock(m_stop_mutex); 
+    running = 1;
+  }
+  m_stop_changed.notify_all();
+}
+
+double EMRun::getLL() {
+  return ll; 
+}
+
+
+
+EMRun::~EMRun() {
+  delete inf;  
+  delete emobj; 
+  emobj = NULL;
+}
+
+
+
+
+ 
+
+  

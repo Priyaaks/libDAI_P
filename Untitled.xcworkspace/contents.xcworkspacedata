@@ -1,0 +1,4944 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:"
+      name = "">
+      <FileRef
+         location = "group:0.log">
+      </FileRef>
+      <FileRef
+         location = "group:0_1.log">
+      </FileRef>
+      <FileRef
+         location = "group:0_2.log">
+      </FileRef>
+      <FileRef
+         location = "group:0_3.log">
+      </FileRef>
+      <Group
+         location = "group:2NodeBN"
+         name = "2NodeBN">
+         <Group
+            location = "group:100"
+            name = "100">
+            <FileRef
+               location = "group:2NodeBN.tab">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:1000"
+            name = "1000">
+            <FileRef
+               location = "group:2NodeBN.tab">
+            </FileRef>
+            <FileRef
+               location = "group:2NodeBN1.tab~">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:250"
+            name = "250">
+            <FileRef
+               location = "group:2NodeBN.tab">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:50"
+            name = "50">
+            <FileRef
+               location = "group:2NodeBN.tab">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:500"
+            name = "500">
+            <FileRef
+               location = "group:19.tab">
+            </FileRef>
+            <FileRef
+               location = "group:2NodeBN.tab">
+            </FileRef>
+            <FileRef
+               location = "group:2NodeBN_0.tab">
+            </FileRef>
+         </Group>
+      </Group>
+      <FileRef
+         location = "group:2NodeBN.em">
+      </FileRef>
+      <FileRef
+         location = "group:2NodeBN.em~">
+      </FileRef>
+      <FileRef
+         location = "group:2NodeBN.fg">
+      </FileRef>
+      <Group
+         location = "group:2NodeBN_factor_graphs"
+         name = "2NodeBN_factor_graphs">
+         <FileRef
+            location = "group:2NodeBN_0.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_1.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_10.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_11.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_12.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_13.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_14.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_15.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_16.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_17.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_18.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_19.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_2.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_20.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_21.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_22.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_23.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_24.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_25.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_26.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_27.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_28.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_29.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_3.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_30.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_31.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_32.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_33.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_34.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_35.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_36.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_37.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_38.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_39.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_4.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_40.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_41.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_42.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_43.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_44.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_45.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_46.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_47.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_48.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_49.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_5.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_50.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_51.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_52.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_53.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_54.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_55.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_56.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_57.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_58.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_59.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_6.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_60.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_61.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_62.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_63.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_64.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_65.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_66.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_67.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_68.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_69.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_7.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_70.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_71.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_72.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_73.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_74.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_75.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_76.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_77.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_78.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_79.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_8.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_80.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_81.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_82.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_83.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_84.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_85.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_86.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_87.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_88.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_89.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_9.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_90.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_91.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_92.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_93.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_94.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_95.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_96.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_97.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_98.fg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_99.fg">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:2NodeBN_noMstep.em">
+      </FileRef>
+      <FileRef
+         location = "group:2NodeBN_noMstep.em~">
+      </FileRef>
+      <Group
+         location = "group:3NodeBN1"
+         name = "3NodeBN1">
+         <Group
+            location = "group:100"
+            name = "100">
+         </Group>
+         <Group
+            location = "group:1000"
+            name = "1000">
+            <FileRef
+               location = "group:2NodeBN1.tab~">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:250"
+            name = "250">
+         </Group>
+         <Group
+            location = "group:50"
+            name = "50">
+         </Group>
+         <Group
+            location = "group:500"
+            name = "500">
+            <FileRef
+               location = "group:3NodeBN1_1.tab">
+            </FileRef>
+            <FileRef
+               location = "group:3NodeBN1_2.tab">
+            </FileRef>
+            <FileRef
+               location = "group:3NodeBN1_3.tab">
+            </FileRef>
+         </Group>
+      </Group>
+      <FileRef
+         location = "group:3NodeBN1.em">
+      </FileRef>
+      <FileRef
+         location = "group:3NodeBN1.em~">
+      </FileRef>
+      <FileRef
+         location = "group:3NodeBN1.fg">
+      </FileRef>
+      <Group
+         location = "group:3NodeBN1_factor_graphs"
+         name = "3NodeBN1_factor_graphs">
+         <FileRef
+            location = "group:3NodeBN1_0.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_1.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_10.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_11.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_12.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_13.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_14.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_15.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_16.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_17.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_18.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_19.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_2.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_20.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_21.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_22.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_23.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_24.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_25.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_26.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_27.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_28.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_29.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_3.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_30.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_31.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_32.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_33.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_34.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_35.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_36.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_37.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_38.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_39.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_4.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_40.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_41.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_42.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_43.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_44.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_45.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_46.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_47.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_48.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_49.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_5.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_50.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_51.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_52.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_53.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_54.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_55.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_56.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_57.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_58.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_59.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_6.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_60.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_61.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_62.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_63.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_64.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_65.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_66.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_67.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_68.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_69.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_7.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_70.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_71.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_72.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_73.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_74.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_75.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_76.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_77.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_78.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_79.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_8.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_80.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_81.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_82.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_83.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_84.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_85.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_86.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_87.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_88.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_89.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_9.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_90.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_91.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_92.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_93.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_94.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_95.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_96.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_97.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_98.fg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_99.fg">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:3NodeMovieBN1.em">
+      </FileRef>
+      <FileRef
+         location = "group:3NodeMovieBN1.em~">
+      </FileRef>
+      <FileRef
+         location = "group:3NodeMovieBN1_3.tab">
+      </FileRef>
+      <FileRef
+         location = "group:500.tar.gz">
+      </FileRef>
+      <Group
+         location = "group:alarm"
+         name = "alarm">
+         <Group
+            location = "group:1000"
+            name = "1000">
+            <FileRef
+               location = "group:23.tab">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:500"
+            name = "500">
+            <FileRef
+               location = "group:19.tab">
+            </FileRef>
+            <FileRef
+               location = "group:19.tab~">
+            </FileRef>
+            <FileRef
+               location = "group:23.tab">
+            </FileRef>
+            <FileRef
+               location = "group:7.tab">
+            </FileRef>
+            <FileRef
+               location = "group:7.tab~">
+            </FileRef>
+            <FileRef
+               location = "group:7_new.tab">
+            </FileRef>
+            <FileRef
+               location = "group:7_old.tab">
+            </FileRef>
+            <FileRef
+               location = "group:7_old.tab~">
+            </FileRef>
+            <FileRef
+               location = "group:coopy.tab">
+            </FileRef>
+            <FileRef
+               location = "group:coopy.tab~">
+            </FileRef>
+         </Group>
+      </Group>
+      <FileRef
+         location = "group:alarm.em">
+      </FileRef>
+      <FileRef
+         location = "group:alarm.tab">
+      </FileRef>
+      <Group
+         location = "group:alarm_factor_graphs"
+         name = "alarm_factor_graphs">
+         <Group
+            location = "group:10"
+            name = "10">
+            <FileRef
+               location = "group:alarm_0.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_1.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_2.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_3.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_4.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_5.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_6.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_7.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_8.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_9.fg">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:200"
+            name = "200">
+            <FileRef
+               location = "group:alarm_0.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_1.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_10.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_100.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_101.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_102.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_103.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_104.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_105.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_106.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_107.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_108.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_109.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_11.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_110.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_111.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_112.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_113.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_114.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_115.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_116.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_117.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_118.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_119.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_12.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_120.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_121.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_122.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_123.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_124.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_125.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_126.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_127.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_128.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_129.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_13.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_130.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_131.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_132.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_133.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_134.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_135.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_136.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_137.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_138.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_139.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_14.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_140.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_141.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_142.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_143.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_144.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_145.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_146.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_147.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_148.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_149.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_15.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_150.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_151.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_152.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_153.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_154.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_155.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_156.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_157.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_158.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_159.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_16.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_160.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_161.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_162.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_163.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_164.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_165.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_166.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_167.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_168.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_169.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_17.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_170.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_171.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_172.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_173.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_174.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_175.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_176.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_177.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_178.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_179.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_18.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_180.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_181.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_182.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_183.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_184.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_185.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_186.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_187.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_188.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_189.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_19.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_190.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_191.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_192.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_193.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_194.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_195.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_196.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_197.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_198.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_199.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_2.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_20.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_21.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_22.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_23.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_24.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_25.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_26.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_27.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_28.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_29.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_3.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_30.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_31.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_32.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_33.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_34.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_35.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_36.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_37.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_38.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_39.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_4.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_40.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_41.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_42.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_43.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_44.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_45.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_46.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_47.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_48.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_49.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_5.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_50.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_51.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_52.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_53.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_54.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_55.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_56.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_57.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_58.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_59.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_6.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_60.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_61.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_62.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_63.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_64.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_65.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_66.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_67.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_68.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_69.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_7.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_70.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_71.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_72.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_73.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_74.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_75.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_76.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_77.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_78.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_79.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_8.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_80.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_81.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_82.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_83.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_84.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_85.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_86.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_87.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_88.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_89.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_9.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_90.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_91.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_92.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_93.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_94.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_95.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_96.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_97.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_98.fg">
+            </FileRef>
+            <FileRef
+               location = "group:alarm_99.fg">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:alarm_1.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm_10.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm_11.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm_12.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm_13.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm_14.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm_15.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm_16.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm_17.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm_18.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm_19.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm_2.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm_3.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm_4.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm_5.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm_6.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm_7.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm_8.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm_9.fg">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:alarmnew_factor_graphs"
+         name = "alarmnew_factor_graphs">
+         <FileRef
+            location = "group:alarm_0.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm1.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm10.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm11.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm12.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm12l.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm13.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm14.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm14l.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm15.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm16.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm16l.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm17.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm18.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm19.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm1_10l.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm1_1l.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm1_2l.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm1_3l.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm1_4l.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm1_5l.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm1_6l.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm1_7l.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm1_8l.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm1_9l.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm1diff1-2">
+         </FileRef>
+         <FileRef
+            location = "group:alarm1l.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm2.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm20.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm20l.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm21.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm22.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm23.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm24.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm24l.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm25.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm26.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm27.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm28.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm29.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm2_10l.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm2_1l.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm2_2l.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm2_3l.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm2_4l.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm2_5l.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm2_6l.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm2_7l.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm2_8l.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm2_9l.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm2diff1-2">
+         </FileRef>
+         <FileRef
+            location = "group:alarm2l.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm2ll.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm3.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm30.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm31.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm32.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm33.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm34.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm35.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm36.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm37.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm38.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm39.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm4.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm40.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm41.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm42.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm43.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm44.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm45.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm46.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm47.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm48.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm49.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm4_1.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm4_2.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm4l.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm5.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm50.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm51.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm52.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm53.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm54.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm55.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm56.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm57.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm58.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm59.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm5l.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm6.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm60.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm61.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm62.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm63.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm64.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm65.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm66.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm67.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm68.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm69.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm7.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm70.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm71.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm72.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm73.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm74.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm75.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm76.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm77.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm78.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm79.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm7l.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm8.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm80.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm81.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm82.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm83.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm84.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm85.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm86.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm87.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm88.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm89.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm8l.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm9.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm90.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm91.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm92.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm93.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm94.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm95.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm96.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm97.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm98.fg">
+         </FileRef>
+         <FileRef
+            location = "group:alarm99.fg">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:alldai.o">
+      </FileRef>
+      <FileRef
+         location = "group:AUTHORS">
+      </FileRef>
+      <FileRef
+         location = "group:bbp.o">
+      </FileRef>
+      <FileRef
+         location = "group:bipgraph.o">
+      </FileRef>
+      <FileRef
+         location = "group:bp.o">
+      </FileRef>
+      <FileRef
+         location = "group:bp_dual.o">
+      </FileRef>
+      <FileRef
+         location = "group:carstarts.em">
+      </FileRef>
+      <FileRef
+         location = "group:cbp.o">
+      </FileRef>
+      <FileRef
+         location = "group:ChangeLog">
+      </FileRef>
+      <FileRef
+         location = "group:clustergraph.o">
+      </FileRef>
+      <FileRef
+         location = "group:customdoxygen.css">
+      </FileRef>
+      <FileRef
+         location = "group:dag.o">
+      </FileRef>
+      <FileRef
+         location = "group:daialg.o">
+      </FileRef>
+      <FileRef
+         location = "group:decmap.o">
+      </FileRef>
+      <FileRef
+         location = "group:deterministic_output.log">
+      </FileRef>
+      <FileRef
+         location = "group:diff">
+      </FileRef>
+      <FileRef
+         location = "group:doxygen.conf">
+      </FileRef>
+      <FileRef
+         location = "group:em.sh">
+      </FileRef>
+      <FileRef
+         location = "group:em.sh~">
+      </FileRef>
+      <FileRef
+         location = "group:em_ga.sh">
+      </FileRef>
+      <FileRef
+         location = "group:em_ga_alarm.sh">
+      </FileRef>
+      <FileRef
+         location = "group:em_ga_alarm.sh~">
+      </FileRef>
+      <FileRef
+         location = "group:em_ga_carstarts.sh">
+      </FileRef>
+      <FileRef
+         location = "group:em_mtem_alarm.sh~">
+      </FileRef>
+      <FileRef
+         location = "group:em_mtem_alarm1.sh">
+      </FileRef>
+      <FileRef
+         location = "group:em_mtem_carstarts.sh">
+      </FileRef>
+      <FileRef
+         location = "group:emalg.o">
+      </FileRef>
+      <FileRef
+         location = "group:emrun.o">
+      </FileRef>
+      <FileRef
+         location = "group:evidence.o">
+      </FileRef>
+      <FileRef
+         location = "group:exactinf.o">
+      </FileRef>
+      <Group
+         location = "group:examples"
+         name = "examples">
+         <FileRef
+            location = "group:2NodeBN_createfg">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_createfg.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_createfg.cpp~">
+         </FileRef>
+         <FileRef
+            location = "group:2NodeBN_createfg.dSYM">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_createfg">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_createfg.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_createfg.cpp~">
+         </FileRef>
+         <FileRef
+            location = "group:3NodeBN1_createfg.dSYM">
+         </FileRef>
+         <FileRef
+            location = "group:computeDistance">
+         </FileRef>
+         <FileRef
+            location = "group:computeDistance.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:computeDistance.dSYM">
+         </FileRef>
+         <FileRef
+            location = "group:diff.txt~">
+         </FileRef>
+         <FileRef
+            location = "group:doInference">
+         </FileRef>
+         <FileRef
+            location = "group:doInference.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:doInference.dSYM">
+         </FileRef>
+         <FileRef
+            location = "group:example">
+         </FileRef>
+         <FileRef
+            location = "group:example.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:example.dSYM">
+         </FileRef>
+         <FileRef
+            location = "group:example_bipgraph.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:example_bipgraph.out">
+         </FileRef>
+         <FileRef
+            location = "group:example_gaem_deterministic.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:example_gaem_deterministic.cpp~">
+         </FileRef>
+         <FileRef
+            location = "group:example_gaem_deterministic.dSYM">
+         </FileRef>
+         <FileRef
+            location = "group:example_gaem_deterministic1">
+         </FileRef>
+         <FileRef
+            location = "group:example_mtem.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:example_gaem_deterministic_distance">
+         </FileRef>
+         <FileRef
+            location = "group:example_gaem_deterministic_distance.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:example_gaem_deterministic_distance.dSYM">
+         </FileRef>
+         <FileRef
+            location = "group:example_gaem_deterministic_distance_pc">
+         </FileRef>
+         <FileRef
+            location = "group:example_gaem_deterministic_distance_pc.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:example_gaem_deterministic_distance_pc.cpp~">
+         </FileRef>
+         <FileRef
+            location = "group:example_gaem_deterministic_distance_pc.dSYM">
+         </FileRef>
+         <FileRef
+            location = "group:example_gaem_deterministic_old.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:example_imagesegmentation.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:example_img_in1.jpg">
+         </FileRef>
+         <FileRef
+            location = "group:example_img_in2.jpg">
+         </FileRef>
+         <FileRef
+            location = "group:example_Newasia_em">
+         </FileRef>
+         <FileRef
+            location = "group:example_Newasia_em.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:example_Newasia_em.cpp~">
+         </FileRef>
+         <FileRef
+            location = "group:example_Newasia_em.dSYM">
+         </FileRef>
+         <FileRef
+            location = "group:example_Newasia_gaem">
+         </FileRef>
+         <FileRef
+            location = "group:example_Newasia_gaem.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:example_Newasia_gaem_deterministic">
+         </FileRef>
+         <FileRef
+            location = "group:example_Newasia_gaem_deterministic.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:example_Newasia_gaem_old.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:example_Newasia_mtem">
+         </FileRef>
+         <FileRef
+            location = "group:example_Newasia_mtem.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:example_Newasia_mtem.cpp~">
+         </FileRef>
+         <FileRef
+            location = "group:example_Newasia_mtem.dSYM">
+         </FileRef>
+         <FileRef
+            location = "group:example_Newasia_mtem_old.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:example_permute.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:example_permute.out">
+         </FileRef>
+         <FileRef
+            location = "group:example_sprinkler">
+         </FileRef>
+         <FileRef
+            location = "group:example_sprinkler.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:example_sprinkler.dot">
+         </FileRef>
+         <FileRef
+            location = "group:example_sprinkler.dSYM">
+         </FileRef>
+         <FileRef
+            location = "group:example_sprinkler.png">
+         </FileRef>
+         <FileRef
+            location = "group:example_sprinkler_em.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:example_sprinkler_gibbs">
+         </FileRef>
+         <FileRef
+            location = "group:example_sprinkler_gibbs.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:example_sprinkler_gibbs.cpp~">
+         </FileRef>
+         <FileRef
+            location = "group:example_sprinkler_gibbs.dSYM">
+         </FileRef>
+         <FileRef
+            location = "group:example_varset.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:example_varset.out">
+         </FileRef>
+         <FileRef
+            location = "group:GaemGlobal">
+         </FileRef>
+         <FileRef
+            location = "group:GaemGlobal.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:GaemGlobal.cpp~">
+         </FileRef>
+         <FileRef
+            location = "group:GaemGlobal.dSYM">
+         </FileRef>
+         <FileRef
+            location = "group:GaemGlobalRandom">
+         </FileRef>
+         <FileRef
+            location = "group:GaemGlobalRandom.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:GaemGlobalRandom.cpp~">
+         </FileRef>
+         <FileRef
+            location = "group:GaemGlobalRandom.dSYM">
+         </FileRef>
+         <FileRef
+            location = "group:generateMovieFg">
+         </FileRef>
+         <FileRef
+            location = "group:generateMovieFg.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:generateMovieFg.cpp~">
+         </FileRef>
+         <FileRef
+            location = "group:generateMovieFg.dSYM">
+         </FileRef>
+         <FileRef
+            location = "group:generaterandomFg">
+         </FileRef>
+         <FileRef
+            location = "group:generaterandomFg.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:generaterandomFg.cpp~">
+         </FileRef>
+         <FileRef
+            location = "group:generaterandomFg.dSYM">
+         </FileRef>
+         <FileRef
+            location = "group:Makefile">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3Node1_createfg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3Node1_createfg.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3Node1_createfg.cpp~">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3Node1_createfg.dSYM">
+         </FileRef>
+         <FileRef
+            location = "group:normal_distribution">
+         </FileRef>
+         <FileRef
+            location = "group:normal_distribution.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:normal_distribution.cpp~">
+         </FileRef>
+         <FileRef
+            location = "group:normal_distribution.dSYM">
+         </FileRef>
+         <FileRef
+            location = "group:SSH_AGENT_PID=1834">
+         </FileRef>
+         <FileRef
+            location = "group:testemrun">
+         </FileRef>
+         <FileRef
+            location = "group:testemrun.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:testemrun.cpp~">
+         </FileRef>
+         <FileRef
+            location = "group:testemrun.dSYM">
+         </FileRef>
+         <FileRef
+            location = "group:uai2010-aie-solver">
+         </FileRef>
+         <FileRef
+            location = "group:uai2010-aie-solver.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:uai2010-aie-solver.dSYM">
+         </FileRef>
+         <FileRef
+            location = "group:va.out">
+         </FileRef>
+         <FileRef
+            location = "group:vector_assign.cpp">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:examples_new"
+         name = "examples_new">
+         <FileRef
+            location = "group:example_gaem_deterministic">
+         </FileRef>
+         <FileRef
+            location = "group:example_gaem_deterministic.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:example_gaem_deterministic.cpp~">
+         </FileRef>
+         <FileRef
+            location = "group:example_gaem_deterministic_distance">
+         </FileRef>
+         <FileRef
+            location = "group:example_gaem_deterministic_distance.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:example_gaem_deterministic_distance_pc">
+         </FileRef>
+         <FileRef
+            location = "group:example_gaem_direct.cpp~">
+         </FileRef>
+         <FileRef
+            location = "group:testemrun.cpp">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:exceptions.o">
+      </FileRef>
+      <FileRef
+         location = "group:factor.o">
+      </FileRef>
+      <FileRef
+         location = "group:factorgraph.o">
+      </FileRef>
+      <FileRef
+         location = "group:fbp.o">
+      </FileRef>
+      <FileRef
+         location = "group:gibbs.o">
+      </FileRef>
+      <FileRef
+         location = "group:graph.o">
+      </FileRef>
+      <FileRef
+         location = "group:hak.o">
+      </FileRef>
+      <Group
+         location = "group:include"
+         name = "include">
+         <Group
+            location = "group:dai"
+            name = "dai">
+            <FileRef
+               location = "group:alldai.h">
+            </FileRef>
+            <FileRef
+               location = "group:bbp.h">
+            </FileRef>
+            <FileRef
+               location = "group:bipgraph.h">
+            </FileRef>
+            <FileRef
+               location = "group:bp.h">
+            </FileRef>
+            <FileRef
+               location = "group:bp_dual.h">
+            </FileRef>
+            <FileRef
+               location = "group:cbp.h">
+            </FileRef>
+            <FileRef
+               location = "group:clustergraph.h">
+            </FileRef>
+            <FileRef
+               location = "group:dag.h">
+            </FileRef>
+            <FileRef
+               location = "group:daialg.h">
+            </FileRef>
+            <FileRef
+               location = "group:decmap.h">
+            </FileRef>
+            <FileRef
+               location = "group:doc.h">
+            </FileRef>
+            <FileRef
+               location = "group:emalg.h">
+            </FileRef>
+            <FileRef
+               location = "group:emalg.h~">
+            </FileRef>
+            <FileRef
+               location = "group:emrun.h">
+            </FileRef>
+            <FileRef
+               location = "group:enum.h">
+            </FileRef>
+            <FileRef
+               location = "group:evidence.h">
+            </FileRef>
+            <FileRef
+               location = "group:exactinf.h">
+            </FileRef>
+            <FileRef
+               location = "group:exceptions.h">
+            </FileRef>
+            <FileRef
+               location = "group:factor.h">
+            </FileRef>
+            <FileRef
+               location = "group:factorgraph.h">
+            </FileRef>
+            <FileRef
+               location = "group:fbp.h">
+            </FileRef>
+            <FileRef
+               location = "group:gibbs.h">
+            </FileRef>
+            <FileRef
+               location = "group:graph.h">
+            </FileRef>
+            <FileRef
+               location = "group:hak.h">
+            </FileRef>
+            <FileRef
+               location = "group:index.h">
+            </FileRef>
+            <FileRef
+               location = "group:io.h">
+            </FileRef>
+            <FileRef
+               location = "group:jtree.h">
+            </FileRef>
+            <FileRef
+               location = "group:layer.h">
+            </FileRef>
+            <FileRef
+               location = "group:lc.h">
+            </FileRef>
+            <Group
+               location = "group:matlab"
+               name = "matlab">
+               <FileRef
+                  location = "group:matlab.h">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:mf.h">
+            </FileRef>
+            <FileRef
+               location = "group:mr.h">
+            </FileRef>
+            <FileRef
+               location = "group:prob.h">
+            </FileRef>
+            <FileRef
+               location = "group:properties.h">
+            </FileRef>
+            <FileRef
+               location = "group:regiongraph.h">
+            </FileRef>
+            <FileRef
+               location = "group:smallset.h">
+            </FileRef>
+            <FileRef
+               location = "group:treeep.h">
+            </FileRef>
+            <FileRef
+               location = "group:trwbp.h">
+            </FileRef>
+            <FileRef
+               location = "group:util.h">
+            </FileRef>
+            <FileRef
+               location = "group:var.h">
+            </FileRef>
+            <FileRef
+               location = "group:varset.h">
+            </FileRef>
+            <FileRef
+               location = "group:weightedgraph.h">
+            </FileRef>
+         </Group>
+      </Group>
+      <FileRef
+         location = "group:io.o">
+      </FileRef>
+      <FileRef
+         location = "group:jtree.o">
+      </FileRef>
+      <FileRef
+         location = "group:l1.fg">
+      </FileRef>
+      <FileRef
+         location = "group:l1.fg~">
+      </FileRef>
+      <FileRef
+         location = "group:l2.fg">
+      </FileRef>
+      <FileRef
+         location = "group:lc.o">
+      </FileRef>
+      <Group
+         location = "group:lib"
+         name = "lib">
+         <FileRef
+            location = "group:libdai.a">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:libDAI"
+         name = "libDAI">
+         <Group
+            location = "group:libDAI"
+            name = "libDAI">
+            <FileRef
+               location = "group:AppDelegate.h">
+            </FileRef>
+            <FileRef
+               location = "group:AppDelegate.m">
+            </FileRef>
+            <FileRef
+               location = "group:Default-568h@2x.png">
+            </FileRef>
+            <FileRef
+               location = "group:Default.png">
+            </FileRef>
+            <FileRef
+               location = "group:Default@2x.png">
+            </FileRef>
+            <Group
+               location = "group:en.lproj"
+               name = "en.lproj">
+               <FileRef
+                  location = "group:InfoPlist.strings">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:libDAI-Info.plist">
+            </FileRef>
+            <FileRef
+               location = "group:libDAI-Prefix.pch">
+            </FileRef>
+            <FileRef
+               location = "group:main.m">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:libDAI.xcodeproj">
+         </FileRef>
+         <Group
+            location = "group:libDAITests"
+            name = "libDAITests">
+            <Group
+               location = "group:en.lproj"
+               name = "en.lproj">
+               <FileRef
+                  location = "group:InfoPlist.strings">
+               </FileRef>
+            </Group>
+            <FileRef
+               location = "group:libDAITests-Info.plist">
+            </FileRef>
+            <FileRef
+               location = "group:libDAITests.h">
+            </FileRef>
+            <FileRef
+               location = "group:libDAITests.m">
+            </FileRef>
+         </Group>
+      </Group>
+      <FileRef
+         location = "group:LICENSE">
+      </FileRef>
+      <FileRef
+         location = "group:log">
+      </FileRef>
+      <FileRef
+         location = "group:Makefile">
+      </FileRef>
+      <FileRef
+         location = "group:Makefile.ALL">
+      </FileRef>
+      <FileRef
+         location = "group:Makefile.conf">
+      </FileRef>
+      <FileRef
+         location = "group:Makefile.conf copy">
+      </FileRef>
+      <FileRef
+         location = "group:Makefile.conf~">
+      </FileRef>
+      <FileRef
+         location = "group:Makefile.CYGWIN">
+      </FileRef>
+      <FileRef
+         location = "group:Makefile.MACOSX">
+      </FileRef>
+      <FileRef
+         location = "group:Makefile.WINDOWS">
+      </FileRef>
+      <FileRef
+         location = "group:Makefile.WINDOWS64">
+      </FileRef>
+      <FileRef
+         location = "group:Makefile1">
+      </FileRef>
+      <FileRef
+         location = "group:Makefile1.conf">
+      </FileRef>
+      <FileRef
+         location = "group:Makefile~">
+      </FileRef>
+      <Group
+         location = "group:matlab"
+         name = "matlab">
+         <FileRef
+            location = "group:dai.m">
+         </FileRef>
+         <FileRef
+            location = "group:dai_jtree.m">
+         </FileRef>
+         <FileRef
+            location = "group:dai_potstrength.m">
+         </FileRef>
+         <FileRef
+            location = "group:dai_readfg.m">
+         </FileRef>
+         <FileRef
+            location = "group:dai_writefg.m">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:mf.o">
+      </FileRef>
+      <FileRef
+         location = "group:Movie3Node1.fg">
+      </FileRef>
+      <Group
+         location = "group:Movie3NodeBN1"
+         name = "Movie3NodeBN1">
+         <FileRef
+            location = "group:u1 (copy).base~">
+         </FileRef>
+         <FileRef
+            location = "group:u1 (copy).test~">
+         </FileRef>
+         <FileRef
+            location = "group:u1.base">
+         </FileRef>
+         <FileRef
+            location = "group:u1.base~">
+         </FileRef>
+         <FileRef
+            location = "group:u1.test">
+         </FileRef>
+         <FileRef
+            location = "group:u1base.tab">
+         </FileRef>
+         <FileRef
+            location = "group:u1base200.tab">
+         </FileRef>
+         <FileRef
+            location = "group:u1base200.tab~">
+         </FileRef>
+         <FileRef
+            location = "group:u1test50.tab">
+         </FileRef>
+         <FileRef
+            location = "group:u1test50.tab~">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:Movie3NodeBN1_1.fg">
+      </FileRef>
+      <FileRef
+         location = "group:Movie3NodeBN1_1.fg~">
+      </FileRef>
+      <Group
+         location = "group:Movie3NodeBN1_factor_graphs"
+         name = "Movie3NodeBN1_factor_graphs">
+         <FileRef
+            location = "group:Movie3NodeBN1_1.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_10.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_11.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_12.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_13.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_14.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_15.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_16.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_17.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_18.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_19.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_2.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_20.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_21.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_22.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_23.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_24.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_25.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_26.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_27.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_28.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_29.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_3.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_30.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_31.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_32.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_33.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_34.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_35.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_36.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_37.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_38.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_39.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_4.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_40.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_41.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_42.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_43.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_44.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_45.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_46.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_47.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_48.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_49.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_5.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_50.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_51.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_52.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_53.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_54.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_55.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_56.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_57.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_58.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_59.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_6.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_60.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_61.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_62.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_63.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_64.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_65.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_66.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_67.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_68.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_69.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_7.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_70.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_71.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_72.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_73.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_74.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_75.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_76.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_77.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_78.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_79.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_8.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_80.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_81.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_82.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_83.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_84.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_85.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_86.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_87.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_88.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_89.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_9.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_90.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_91.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_92.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_93.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_94.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_95.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_96.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_97.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_98.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_99.fg">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:Movie5NodeLearned.fg">
+      </FileRef>
+      <FileRef
+         location = "group:mr.o">
+      </FileRef>
+      <FileRef
+         location = "group:o.log">
+      </FileRef>
+      <FileRef
+         location = "group:out.log">
+      </FileRef>
+      <FileRef
+         location = "group:out1.log">
+      </FileRef>
+      <FileRef
+         location = "group:properties.o">
+      </FileRef>
+      <FileRef
+         location = "group:README">
+      </FileRef>
+      <Group
+         location = "group:Recodata"
+         name = "Recodata">
+         <FileRef
+            location = "group:4NodeMovieBN1.em">
+         </FileRef>
+         <FileRef
+            location = "group:4NodeMovieBN2.em">
+         </FileRef>
+         <FileRef
+            location = "group:4NodeMovieBN3.em">
+         </FileRef>
+         <FileRef
+            location = "group:5NodeMovieBN1.em">
+         </FileRef>
+         <FileRef
+            location = "group:em.sh">
+         </FileRef>
+         <Group
+            location = "group:examples"
+            name = "examples">
+            <FileRef
+               location = "group:2NodeBN_createfg">
+            </FileRef>
+            <FileRef
+               location = "group:2NodeBN_createfg.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:2NodeBN_createfg.cpp~">
+            </FileRef>
+            <FileRef
+               location = "group:3NodeBN1_createfg">
+            </FileRef>
+            <FileRef
+               location = "group:3NodeBN1_createfg.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:3NodeBN1_createfg.cpp~">
+            </FileRef>
+            <FileRef
+               location = "group:4NodeMovieBN1.em">
+            </FileRef>
+            <FileRef
+               location = "group:diff.txt~">
+            </FileRef>
+            <FileRef
+               location = "group:example.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:example_bipgraph.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:example_bipgraph.out">
+            </FileRef>
+            <FileRef
+               location = "group:example_gaem_deterministic">
+            </FileRef>
+            <FileRef
+               location = "group:example_gaem_deterministic.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:example_gaem_deterministic.cpp~">
+            </FileRef>
+            <FileRef
+               location = "group:example_gaem_deterministic1">
+            </FileRef>
+            <FileRef
+               location = "group:example_gaem_deterministic_distance">
+            </FileRef>
+            <FileRef
+               location = "group:example_gaem_deterministic_distance.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:example_gaem_deterministic_distance_pc">
+            </FileRef>
+            <FileRef
+               location = "group:example_gaem_deterministic_distance_pc.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:example_gaem_deterministic_distance_pc.cpp~">
+            </FileRef>
+            <FileRef
+               location = "group:example_gaem_deterministic_old.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:example_imagesegmentation.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:example_img_in1.jpg">
+            </FileRef>
+            <FileRef
+               location = "group:example_img_in2.jpg">
+            </FileRef>
+            <FileRef
+               location = "group:example_Newasia_em">
+            </FileRef>
+            <FileRef
+               location = "group:example_Newasia_em.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:example_Newasia_em.cpp~">
+            </FileRef>
+            <FileRef
+               location = "group:example_Newasia_gaem">
+            </FileRef>
+            <FileRef
+               location = "group:example_Newasia_gaem.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:example_Newasia_gaem_deterministic">
+            </FileRef>
+            <FileRef
+               location = "group:example_Newasia_gaem_deterministic.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:example_Newasia_gaem_old.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:example_Newasia_mtem">
+            </FileRef>
+            <FileRef
+               location = "group:example_Newasia_mtem.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:example_Newasia_mtem.cpp~">
+            </FileRef>
+            <FileRef
+               location = "group:example_Newasia_mtem_old.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:example_permute.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:example_permute.out">
+            </FileRef>
+            <FileRef
+               location = "group:example_sprinkler">
+            </FileRef>
+            <FileRef
+               location = "group:example_sprinkler.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:example_sprinkler.dot">
+            </FileRef>
+            <FileRef
+               location = "group:example_sprinkler.png">
+            </FileRef>
+            <FileRef
+               location = "group:example_sprinkler_em.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:example_sprinkler_gibbs">
+            </FileRef>
+            <FileRef
+               location = "group:example_sprinkler_gibbs.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:example_sprinkler_gibbs.cpp~">
+            </FileRef>
+            <FileRef
+               location = "group:example_varset.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:example_varset.out">
+            </FileRef>
+            <FileRef
+               location = "group:GaemGlobal">
+            </FileRef>
+            <FileRef
+               location = "group:GaemGlobal.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:GaemGlobal.cpp~">
+            </FileRef>
+            <FileRef
+               location = "group:GaemGlobalRandom">
+            </FileRef>
+            <FileRef
+               location = "group:GaemGlobalRandom.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:GaemGlobalRandom.cpp~">
+            </FileRef>
+            <FileRef
+               location = "group:generateMovieFg">
+            </FileRef>
+            <FileRef
+               location = "group:generateMovieFg.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:generateMovieFg.cpp~">
+            </FileRef>
+            <FileRef
+               location = "group:generaterandomFg">
+            </FileRef>
+            <FileRef
+               location = "group:generaterandomFg.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:generaterandomFg.cpp~">
+            </FileRef>
+            <FileRef
+               location = "group:Makefile">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3Node1_createfg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3Node1_createfg.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3Node1_createfg.cpp~">
+            </FileRef>
+            <FileRef
+               location = "group:normal_distribution">
+            </FileRef>
+            <FileRef
+               location = "group:normal_distribution.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:normal_distribution.cpp~">
+            </FileRef>
+            <FileRef
+               location = "group:out">
+            </FileRef>
+            <FileRef
+               location = "group:out1">
+            </FileRef>
+            <FileRef
+               location = "group:SSH_AGENT_PID=1834">
+            </FileRef>
+            <FileRef
+               location = "group:testemrun">
+            </FileRef>
+            <FileRef
+               location = "group:testemrun.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:testemrun.cpp~">
+            </FileRef>
+            <FileRef
+               location = "group:uai2010-aie-solver">
+            </FileRef>
+            <FileRef
+               location = "group:uai2010-aie-solver.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:va.out">
+            </FileRef>
+            <FileRef
+               location = "group:vector_assign.cpp">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Movie3NodeBN1"
+            name = "Movie3NodeBN1">
+            <FileRef
+               location = "group:u1 (copy).base~">
+            </FileRef>
+            <FileRef
+               location = "group:u1 (copy).test~">
+            </FileRef>
+            <FileRef
+               location = "group:u1.base">
+            </FileRef>
+            <FileRef
+               location = "group:u1.base~">
+            </FileRef>
+            <FileRef
+               location = "group:u1.test">
+            </FileRef>
+            <FileRef
+               location = "group:u1base.tab">
+            </FileRef>
+            <FileRef
+               location = "group:u1base200.tab">
+            </FileRef>
+            <FileRef
+               location = "group:u1base200.tab~">
+            </FileRef>
+            <FileRef
+               location = "group:u1test50.tab">
+            </FileRef>
+            <FileRef
+               location = "group:u1test50.tab~">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:Movie3NodeBN1_1.fg.PR">
+         </FileRef>
+         <FileRef
+            location = "group:Movie3NodeBN1_7.fg.PR">
+         </FileRef>
+         <Group
+            location = "group:Movie3NodeBN1_factor_graphs"
+            name = "Movie3NodeBN1_factor_graphs">
+            <FileRef
+               location = "group:Movie3NodeBN1_1.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_10.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_11.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_12.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_13.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_14.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_15.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_16.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_17.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_18.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_19.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_2.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_20.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_21.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_22.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_23.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_24.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_25.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_26.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_27.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_28.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_29.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_3.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_30.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_31.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_32.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_33.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_34.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_35.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_36.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_37.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_38.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_39.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_4.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_40.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_41.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_42.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_43.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_44.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_45.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_46.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_47.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_48.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_49.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_5.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_50.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_51.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_52.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_53.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_54.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_55.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_56.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_57.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_58.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_59.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_6.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_60.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_61.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_62.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_63.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_64.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_65.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_66.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_67.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_68.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_69.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_7.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_70.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_71.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_72.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_73.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_74.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_75.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_76.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_77.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_78.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_79.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_8.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_80.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_81.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_82.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_83.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_84.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_85.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_86.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_87.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_88.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_89.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_9.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_90.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_91.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_92.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_93.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_94.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_95.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_96.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_97.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_98.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie3NodeBN1_99.fg">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Movie4Node1_factor_graphs"
+            name = "Movie4Node1_factor_graphs">
+            <FileRef
+               location = "group:Movie4NodeBN1_1.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_10.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_11.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_12.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_13.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_14.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_15.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_16.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_17.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_18.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_19.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_2.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_20.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_21.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_22.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_23.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_24.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_25.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_26.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_27.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_28.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_29.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_3.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_30.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_31.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_32.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_33.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_34.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_35.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_36.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_37.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_38.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_39.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_4.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_40.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_41.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_42.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_43.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_44.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_45.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_46.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_47.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_48.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_49.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_5.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_50.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_51.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_52.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_53.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_54.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_55.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_56.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_57.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_58.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_59.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_6.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_60.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_61.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_62.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_63.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_64.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_65.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_66.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_67.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_68.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_69.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_7.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_70.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_71.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_72.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_73.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_74.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_75.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_76.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_77.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_78.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_79.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_8.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_80.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_81.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_82.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_83.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_84.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_85.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_86.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_87.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_88.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_89.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_9.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_90.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_91.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_92.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_93.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_94.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_95.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_96.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_97.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_98.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_99.fg">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Movie4Node2_factor_graphs"
+            name = "Movie4Node2_factor_graphs">
+         </Group>
+         <Group
+            location = "group:Movie4Node3_factor_graphs"
+            name = "Movie4Node3_factor_graphs">
+            <FileRef
+               location = "group:Movie4NodeBN1_1.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_10.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_11.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_12.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_13.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_14.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_15.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_16.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_17.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_18.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_19.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_2.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_20.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_21.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_22.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_23.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_24.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_25.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_26.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_27.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_28.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_29.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_3.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_30.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_31.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_32.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_33.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_34.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_35.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_36.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_37.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_38.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_39.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_4.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_40.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_41.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_42.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_43.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_44.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_45.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_46.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_47.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_48.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_49.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_5.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_50.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_51.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_52.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_53.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_54.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_55.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_56.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_57.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_58.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_59.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_6.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_60.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_61.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_62.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_63.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_64.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_65.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_66.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_67.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_68.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_69.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_7.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_70.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_71.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_72.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_73.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_74.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_75.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_76.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_77.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_78.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_79.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_8.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_80.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_81.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_82.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_83.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_84.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_85.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_86.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_87.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_88.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_89.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_9.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_90.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_91.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_92.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_93.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_94.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_95.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_96.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_97.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_98.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_99.fg">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Movie4NodeBN1"
+            name = "Movie4NodeBN1">
+            <FileRef
+               location = "group:u1base200.tab">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:Movie4NodeBN1_1.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie4NodeBN2_1.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie4NodeBN3_1.fg">
+         </FileRef>
+         <FileRef
+            location = "group:Movie4NodeBN4_1.fg">
+         </FileRef>
+         <Group
+            location = "group:Movie5Node1_factor_graphs"
+            name = "Movie5Node1_factor_graphs">
+            <FileRef
+               location = "group:Movie4NodeBN1_1.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_10.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_11.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_12.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_13.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_14.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_15.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_16.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_17.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_18.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_19.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_2.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_20.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_21.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_22.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_23.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_24.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_25.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_26.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_27.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_28.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_29.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_3.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_30.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_31.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_32.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_33.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_34.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_35.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_36.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_37.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_38.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_39.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_4.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_40.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_41.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_42.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_43.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_44.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_45.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_46.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_47.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_48.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_49.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_5.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_50.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_51.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_52.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_53.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_54.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_55.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_56.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_57.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_58.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_59.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_6.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_60.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_61.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_62.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_63.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_64.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_65.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_66.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_67.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_68.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_69.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_7.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_70.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_71.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_72.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_73.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_74.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_75.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_76.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_77.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_78.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_79.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_8.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_80.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_81.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_82.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_83.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_84.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_85.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_86.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_87.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_88.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_89.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_9.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_90.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_91.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_92.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_93.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_94.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_95.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_96.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_97.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_98.fg">
+            </FileRef>
+            <FileRef
+               location = "group:Movie4NodeBN1_99.fg">
+            </FileRef>
+         </Group>
+         <Group
+            location = "group:Movie5NodeBN1"
+            name = "Movie5NodeBN1">
+            <FileRef
+               location = "group:u1base200.tab">
+            </FileRef>
+            <FileRef
+               location = "group:u1test200.tab">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:out">
+         </FileRef>
+         <FileRef
+            location = "group:out1">
+         </FileRef>
+         <FileRef
+            location = "group:out1_4NodeBN3">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:regiongraph.o">
+      </FileRef>
+      <FileRef
+         location = "group:result">
+      </FileRef>
+      <Group
+         location = "group:scripts"
+         name = "scripts">
+         <FileRef
+            location = "group:convert-fastInf-DAI.pl">
+         </FileRef>
+         <FileRef
+            location = "group:makeREADME">
+         </FileRef>
+         <FileRef
+            location = "group:regenerate-properties">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:sortscript_em_1.sh">
+      </FileRef>
+      <FileRef
+         location = "group:sortscript_ga.sh">
+      </FileRef>
+      <FileRef
+         location = "group:sortscript_ga_1.sh">
+      </FileRef>
+      <FileRef
+         location = "group:sortscript_ga_1.sh~">
+      </FileRef>
+      <FileRef
+         location = "group:sprinkler.em">
+      </FileRef>
+      <FileRef
+         location = "group:sprinkler.fg">
+      </FileRef>
+      <FileRef
+         location = "group:sprinkler.tab">
+      </FileRef>
+      <Group
+         location = "group:src"
+         name = "src">
+         <FileRef
+            location = "group:alldai.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:bbp.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:bipgraph.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:bp.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:bp_dual.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:cbp.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:clustergraph.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:dag.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:daialg.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:decmap.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:emalg.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:emalg.cpp~">
+         </FileRef>
+         <FileRef
+            location = "group:emrun.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:emrun.cpp~">
+         </FileRef>
+         <FileRef
+            location = "group:evidence.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:evidence.cpp~">
+         </FileRef>
+         <FileRef
+            location = "group:evidence_orignal.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:exactinf.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:exceptions.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:factor.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:factorgraph.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:factorgraph_old.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:fbp.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:gibbs.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:graph.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:hak.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:io.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:jtree.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:jtree.cpp~">
+         </FileRef>
+         <FileRef
+            location = "group:layer.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:lc.cpp">
+         </FileRef>
+         <Group
+            location = "group:matlab"
+            name = "matlab">
+            <FileRef
+               location = "group:dai.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:dai_jtree.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:dai_potstrength.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:dai_readfg.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:dai_writefg.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:matlab.cpp">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:mf.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:mr.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:properties.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:regiongraph.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:treeep.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:trwbp.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:util.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:util_original.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:varset.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:weightedgraph.cpp">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:surface3d_demo.py">
+      </FileRef>
+      <Group
+         location = "group:swig"
+         name = "swig">
+         <FileRef
+            location = "group:dai.i">
+         </FileRef>
+         <FileRef
+            location = "group:example_sprinkler.m">
+         </FileRef>
+         <FileRef
+            location = "group:example_sprinkler.py">
+         </FileRef>
+         <FileRef
+            location = "group:Makefile">
+         </FileRef>
+         <FileRef
+            location = "group:README">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:tests"
+         name = "tests">
+         <FileRef
+            location = "group:alarm.uai">
+         </FileRef>
+         <FileRef
+            location = "group:aliases.conf">
+         </FileRef>
+         <FileRef
+            location = "group:hoi1.fg">
+         </FileRef>
+         <FileRef
+            location = "group:hoi2.fg">
+         </FileRef>
+         <FileRef
+            location = "group:hoi3.fg">
+         </FileRef>
+         <FileRef
+            location = "group:hoi4.fg">
+         </FileRef>
+         <FileRef
+            location = "group:jtreemapbug.fg">
+         </FileRef>
+         <FileRef
+            location = "group:maxprodbug.fg">
+         </FileRef>
+         <FileRef
+            location = "group:maxprodbug2.fg">
+         </FileRef>
+         <FileRef
+            location = "group:maxprodbug3.fg">
+         </FileRef>
+         <FileRef
+            location = "group:testall">
+         </FileRef>
+         <FileRef
+            location = "group:testall.bat">
+         </FileRef>
+         <FileRef
+            location = "group:testbbp.cpp">
+         </FileRef>
+         <FileRef
+            location = "group:testdai.cpp">
+         </FileRef>
+         <Group
+            location = "group:testem"
+            name = "testem">
+            <FileRef
+               location = "group:2var.em">
+            </FileRef>
+            <FileRef
+               location = "group:2var.fg">
+            </FileRef>
+            <FileRef
+               location = "group:2var_data.tab">
+            </FileRef>
+            <FileRef
+               location = "group:3var.em">
+            </FileRef>
+            <FileRef
+               location = "group:3var.fg">
+            </FileRef>
+            <FileRef
+               location = "group:hoi1_data.tab">
+            </FileRef>
+            <FileRef
+               location = "group:hoi1_infer_f2.em">
+            </FileRef>
+            <FileRef
+               location = "group:hoi1_share_f0_f1_f2.em">
+            </FileRef>
+            <FileRef
+               location = "group:hoi1_share_f0_f2.em">
+            </FileRef>
+            <FileRef
+               location = "group:runtests">
+            </FileRef>
+            <FileRef
+               location = "group:runtests.bat">
+            </FileRef>
+            <FileRef
+               location = "group:testem.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:testem.out">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:testfast.fg">
+         </FileRef>
+         <FileRef
+            location = "group:testfast.out">
+         </FileRef>
+         <FileRef
+            location = "group:testregression">
+         </FileRef>
+         <FileRef
+            location = "group:testregression.bat">
+         </FileRef>
+         <FileRef
+            location = "group:twofactors.fg">
+         </FileRef>
+         <Group
+            location = "group:unit"
+            name = "unit">
+            <FileRef
+               location = "group:alldai_test.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:bipgraph_test.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:clustergraph_test.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:dag_test.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:daialg_test.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:enum_test.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:exceptions_test.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:factor_test.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:factorgraph_test.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:graph_test.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:index_test.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:prob_test.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:properties_test.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:regiongraph_test.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:smallset_test.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:util_test.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:var_test.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:varset_test.cpp">
+            </FileRef>
+            <FileRef
+               location = "group:weightedgraph_test.cpp">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:zeroes1.fg">
+         </FileRef>
+      </Group>
+      <FileRef
+         location = "group:time_ga_1.sh">
+      </FileRef>
+      <FileRef
+         location = "group:treeep.o">
+      </FileRef>
+      <FileRef
+         location = "group:trwbp.o">
+      </FileRef>
+      <FileRef
+         location = "group:Untitled.xcworkspace">
+      </FileRef>
+      <FileRef
+         location = "group:util.o">
+      </FileRef>
+      <FileRef
+         location = "group:varset.o">
+      </FileRef>
+      <FileRef
+         location = "group:weightedgraph.o">
+      </FileRef>
+   </Group>
+</Workspace>
